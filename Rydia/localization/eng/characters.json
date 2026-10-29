@@ -1,3 +1,16 @@
 {
-  
+  "RYDIA-RYDIA.aromaPrinciple": "A gifted summoner of Mist who commands powerful Eidolons.",
+  "RYDIA-RYDIA.banter.alive.endTurnPing": "Are you ready?",
+  "RYDIA-RYDIA.banter.dead.endTurnPing": "...",
+  "RYDIA-RYDIA.cardsModifierDescription": "Rydia cards will now appear in rewards and shops.",
+  "RYDIA-RYDIA.cardsModifierTitle": "Rydia Cards",
+  "RYDIA-RYDIA.description": "A summoner of Mist who calls upon Eidolons and wields powerful magic. Accumulate [gold]Summon[/gold] gauge and unleash the hidden power of the Eidolons.",
+  "RYDIA-RYDIA.eventDeathPrevention": "I won't give up!",
+  "RYDIA-RYDIA.goldMonologue": "That's a lot of gil!",
+  "RYDIA-RYDIA.possessiveAdjective": "her",
+  "RYDIA-RYDIA.pronounObject": "her",
+  "RYDIA-RYDIA.pronounPossessive": "hers",
+  "RYDIA-RYDIA.pronounSubject": "she",
+  "RYDIA-RYDIA.title": "Summoner Rydia",
+  "RYDIA-RYDIA.titleObject": "Summoner Rydia"
 }

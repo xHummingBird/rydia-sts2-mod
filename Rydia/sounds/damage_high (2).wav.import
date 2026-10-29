@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4kwufck14us5"
+path="res://.godot/imported/damage_high (2).wav-53c222095a6df8e1c7f21a3aceceba76.sample"
+
+[deps]
+
+source_file="res://Rydia/sounds/damage_high (2).wav"
+dest_files=["res://.godot/imported/damage_high (2).wav-53c222095a6df8e1c7f21a3aceceba76.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

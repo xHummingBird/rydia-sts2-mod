@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bxdhgi2y47hym"
+path="res://.godot/imported/summon (1).wav-db41c91671ad5b3f03dc808b9a3d67e7.sample"
+
+[deps]
+
+source_file="res://Rydia/sounds/summon (1).wav"
+dest_files=["res://.godot/imported/summon (1).wav-db41c91671ad5b3f03dc808b9a3d67e7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

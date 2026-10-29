@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cn1n4n4idvcyk"
+path="res://.godot/imported/attack (2).wav-367d3825baf59178c3bd3d20e5b85a35.sample"
+
+[deps]
+
+source_file="res://Rydia/sounds/attack (2).wav"
+dest_files=["res://.godot/imported/attack (2).wav-367d3825baf59178c3bd3d20e5b85a35.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

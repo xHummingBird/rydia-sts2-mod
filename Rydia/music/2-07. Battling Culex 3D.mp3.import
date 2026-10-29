@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://00cud05c5kuo"
+path="res://.godot/imported/2-07. Battling Culex 3D.mp3-a110e5cfca8478647bb73a901041fd4c.mp3str"
+
+[deps]
+
+source_file="res://Rydia/music/2-07. Battling Culex 3D.mp3"
+dest_files=["res://.godot/imported/2-07. Battling Culex 3D.mp3-a110e5cfca8478647bb73a901041fd4c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

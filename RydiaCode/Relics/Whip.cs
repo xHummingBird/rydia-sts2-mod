@@ -1,6 +1,8 @@
-﻿namespace Rydia.RydiaCode.Relics;
+﻿using MegaCrit.Sts2.Core.Entities.Relics;
 
-public class Whip
+namespace Rydia.RydiaCode.Relics;
+
+public class Whip : SummonRelicBase
 {
-    
+    public override RelicRarity Rarity => RelicRarity.Starter;
 }

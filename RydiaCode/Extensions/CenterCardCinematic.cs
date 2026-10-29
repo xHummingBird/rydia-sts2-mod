@@ -4,7 +4,7 @@ using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace Tidus.TidusCode.Extensions;
+namespace Rydia.RydiaCode.Extensions;
 
 public static class CenterCardCinematic
 {

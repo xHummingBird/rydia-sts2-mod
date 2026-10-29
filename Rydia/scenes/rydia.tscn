@@ -1,0 +1,1942 @@
+[gd_scene load_steps=138 format=3 uid="uid://bucndqol7rgj2"]
+
+[ext_resource type="Texture2D" uid="uid://bn2ecc2s2mcis" path="res://Rydia/images/spritesheets/idle/00_idle.png" id="1_7o6xj"]
+[ext_resource type="Texture2D" uid="uid://bgjyggl6i0pby" path="res://Rydia/images/spritesheets/idle/01_idle.png" id="2_6gtlo"]
+[ext_resource type="Texture2D" uid="uid://hgevulheexx6" path="res://Rydia/images/spritesheets/idle/02_idle.png" id="3_ms24f"]
+[ext_resource type="Texture2D" uid="uid://flsud3yaspb0" path="res://Rydia/images/spritesheets/idle/03_idle.png" id="4_w34st"]
+[ext_resource type="Texture2D" uid="uid://5oo6ituicqib" path="res://Rydia/images/spritesheets/summon_cast/00_summon.png" id="5_24lo1"]
+[ext_resource type="Texture2D" uid="uid://d7245hjqlrst" path="res://Rydia/images/spritesheets/summon_cast/01_summon.png" id="6_4m5yq"]
+[ext_resource type="Texture2D" uid="uid://bawkwnu202nw" path="res://Rydia/images/spritesheets/summon_cast/02_summon.png" id="7_xt4o5"]
+[ext_resource type="Texture2D" uid="uid://cm3ltub3rscx3" path="res://Rydia/images/spritesheets/summon_cast/03_summon.png" id="8_mpvbm"]
+[ext_resource type="Texture2D" uid="uid://c7ayxny06al5t" path="res://Rydia/images/spritesheets/summon_cast/04_summon.png" id="9_euf5a"]
+[ext_resource type="Texture2D" uid="uid://d3r8m70kajiir" path="res://Rydia/images/spritesheets/summon_cast/05_summon.png" id="10_tgu0a"]
+[ext_resource type="Texture2D" uid="uid://no4dwqiwfjln" path="res://Rydia/images/spritesheets/summon_cast/06_summon.png" id="11_l3bh0"]
+[ext_resource type="Texture2D" uid="uid://dm2yt0ii3o7gh" path="res://Rydia/images/spritesheets/summon_cast/07_summon.png" id="12_hpt5r"]
+[ext_resource type="Texture2D" uid="uid://ri2t45lw6tmj" path="res://Rydia/images/spritesheets/summon_cast/08_summon.png" id="13_gruqu"]
+[ext_resource type="Texture2D" uid="uid://dt4ce47oo0md0" path="res://Rydia/images/spritesheets/summon_cast/09_summon.png" id="14_fh2qj"]
+[ext_resource type="Texture2D" uid="uid://1kjtovn70xrf" path="res://Rydia/images/spritesheets/summon_cast/10_summon.png" id="15_q6rti"]
+[ext_resource type="Texture2D" uid="uid://bisaxh2nxbb2e" path="res://Rydia/images/spritesheets/summon_cast/11_summon.png" id="16_unyr5"]
+[ext_resource type="Texture2D" uid="uid://cwy3jyrk6vo12" path="res://Rydia/images/spritesheets/summon_cast/12_summon.png" id="17_dwida"]
+[ext_resource type="Texture2D" uid="uid://ctwwi68eetwun" path="res://Rydia/images/spritesheets/summon_cast/13_summon.png" id="18_h4xvd"]
+[ext_resource type="Texture2D" uid="uid://34lsohgq6ok5" path="res://Rydia/images/spritesheets/summon_cast/14_summon.png" id="19_qstm0"]
+[ext_resource type="Texture2D" uid="uid://dn4iwiwaeh6af" path="res://Rydia/images/spritesheets/summon_cast/15_summon.png" id="20_qqs2x"]
+[ext_resource type="Texture2D" uid="uid://cq4ahehcjmqcl" path="res://Rydia/images/spritesheets/summon_cast/16_summon.png" id="21_jqjx6"]
+[ext_resource type="Texture2D" uid="uid://c6s332prjqoaj" path="res://Rydia/images/spritesheets/summon_cast/17_summon.png" id="22_cxxtk"]
+[ext_resource type="Texture2D" uid="uid://crr1jq037fgud" path="res://Rydia/images/spritesheets/summon_cast/18_summon.png" id="23_mvcc4"]
+[ext_resource type="Texture2D" uid="uid://5hypp41pcieo" path="res://Rydia/images/spritesheets/summon_cast/19_summon.png" id="24_m80wp"]
+[ext_resource type="Texture2D" uid="uid://cttjkc6id8bx8" path="res://Rydia/images/spritesheets/summon_cast/20_summon.png" id="25_gqk5j"]
+[ext_resource type="Texture2D" uid="uid://cfccrhvumw186" path="res://Rydia/images/spritesheets/summon_cast/21_summon.png" id="26_dema1"]
+[ext_resource type="Texture2D" uid="uid://ct1cqawsjdcmk" path="res://Rydia/images/spritesheets/summon_cast/22_summon.png" id="27_8ff63"]
+[ext_resource type="Texture2D" uid="uid://cb6xxqno3d1e0" path="res://Rydia/images/spritesheets/summon_cast/23_summon.png" id="28_8fj2v"]
+[ext_resource type="Texture2D" uid="uid://7lg8xhq2e1uo" path="res://Rydia/images/spritesheets/summon_cast/24_summon.png" id="29_a70ig"]
+[ext_resource type="Texture2D" uid="uid://cqel057bgmljm" path="res://Rydia/images/spritesheets/summon_cast/25_summon.png" id="30_wchdg"]
+[ext_resource type="Texture2D" uid="uid://c27giqi3eir5f" path="res://Rydia/images/spritesheets/summon_cast/26_summon.png" id="31_guaww"]
+[ext_resource type="Texture2D" uid="uid://b2aqyhdwsd0ip" path="res://Rydia/images/spritesheets/summon_cast/27_summon.png" id="32_6pri3"]
+[ext_resource type="Texture2D" uid="uid://doqfqceteunmv" path="res://Rydia/images/spritesheets/summon_cast/28_summon.png" id="33_f8usp"]
+[ext_resource type="Texture2D" uid="uid://cq6kd642lrbc6" path="res://Rydia/images/spritesheets/summon_cast/29_summon.png" id="34_blaty"]
+[ext_resource type="Texture2D" uid="uid://ckbwa8md67u4n" path="res://Rydia/images/spritesheets/summon_cast/30_summon.png" id="35_uf58k"]
+[ext_resource type="Texture2D" uid="uid://ftbuhka76y1l" path="res://Rydia/images/spritesheets/summon_cast/31_summon.png" id="36_exui7"]
+[ext_resource type="Texture2D" uid="uid://bthhreqvbwevg" path="res://Rydia/images/spritesheets/summon_cast/32_summon.png" id="37_xyjdh"]
+[ext_resource type="Texture2D" uid="uid://qep5s4dlldra" path="res://Rydia/images/spritesheets/summon_cast/33_summon.png" id="38_3276y"]
+[ext_resource type="Texture2D" uid="uid://f5ntjqw1d6lr" path="res://Rydia/images/spritesheets/attack/00_attack.png" id="39_mpvbm"]
+[ext_resource type="Texture2D" uid="uid://dwr7rtu4x3vs2" path="res://Rydia/images/spritesheets/attack/01_attack.png" id="40_euf5a"]
+[ext_resource type="Texture2D" uid="uid://p6rvgwpftb7p" path="res://Rydia/images/spritesheets/attack/02_attack.png" id="41_tgu0a"]
+[ext_resource type="Texture2D" uid="uid://dvw7tg2ahnph5" path="res://Rydia/images/spritesheets/attack/03_attack.png" id="42_l3bh0"]
+[ext_resource type="Texture2D" uid="uid://cwfmx6yi4lsns" path="res://Rydia/images/spritesheets/attack/04_attack.png" id="43_hpt5r"]
+[ext_resource type="Texture2D" uid="uid://bkk2jcq15dj4o" path="res://Rydia/images/spritesheets/attack/05_attack.png" id="44_gruqu"]
+[ext_resource type="Texture2D" uid="uid://dgkanim43nup4" path="res://Rydia/images/spritesheets/attack/06_attack.png" id="45_fh2qj"]
+[ext_resource type="Texture2D" uid="uid://dkpvqq13y7j7o" path="res://Rydia/images/spritesheets/leviathan/Summon/18_leviathan.png" id="46_j65ij"]
+[ext_resource type="Texture2D" uid="uid://dv6lt4e7u6kvn" path="res://Rydia/images/spritesheets/leviathan/Summon/19_leviathan.png" id="47_p3y0c"]
+[ext_resource type="Texture2D" uid="uid://d0gth8235i83h" path="res://Rydia/images/spritesheets/leviathan/Summon/20_leviathan.png" id="48_c3mrw"]
+[ext_resource type="Texture2D" uid="uid://bhlcwcd400a5u" path="res://Rydia/images/spritesheets/leviathan/Summon/21_leviathan.png" id="49_prap4"]
+[ext_resource type="Texture2D" uid="uid://ckfwhpaaunqrs" path="res://Rydia/images/spritesheets/leviathan/Summon/22_leviathan.png" id="50_rodj5"]
+[ext_resource type="Texture2D" uid="uid://bewky3kpumjo7" path="res://Rydia/images/spritesheets/leviathan/Summon/23_leviathan.png" id="51_4ufm7"]
+[ext_resource type="Texture2D" uid="uid://cqspm5ppffcx8" path="res://Rydia/images/spritesheets/leviathan/Summon/24_leviathan.png" id="52_ja1ml"]
+[ext_resource type="Texture2D" uid="uid://ckaxtguhj6nw2" path="res://Rydia/images/spritesheets/leviathan/Summon/25_leviathan.png" id="53_pyat1"]
+[ext_resource type="Texture2D" uid="uid://b1174x501jksc" path="res://Rydia/images/spritesheets/leviathan/Summon/26_leviathan.png" id="54_d84bf"]
+[ext_resource type="Texture2D" uid="uid://cpuqach5rhi2m" path="res://Rydia/images/spritesheets/leviathan/Summon/27_leviathan.png" id="55_0uk6c"]
+[ext_resource type="Texture2D" uid="uid://qypv3pu7pu4v" path="res://Rydia/images/spritesheets/leviathan/Summon/28_leviathan.png" id="56_wvn2c"]
+[ext_resource type="Texture2D" uid="uid://cn5sbg27lty0i" path="res://Rydia/images/spritesheets/leviathan/Summon/29_leviathan.png" id="57_736r8"]
+[ext_resource type="Texture2D" uid="uid://dhtjyaw1oe82j" path="res://Rydia/images/spritesheets/leviathan/Summon/30_leviathan.png" id="58_g85cn"]
+[ext_resource type="AudioStream" uid="uid://csml7xq8rciqf" path="res://Rydia/sfx/water_2.wav" id="64_bc8uf"]
+[ext_resource type="AudioStream" uid="uid://b11l6fi8hk4ad" path="res://Rydia/sfx/tidal_wave.mp3" id="65_lbp1b"]
+[ext_resource type="Texture2D" uid="uid://bbpgj4m5i7xrg" path="res://Rydia/images/spritesheets/leviathan/Summon/39_leviathan.png" id="67_7v0uu"]
+[ext_resource type="Texture2D" uid="uid://ln16ex13p8j1" path="res://Rydia/images/spritesheets/leviathan/Summon/40_leviathan.png" id="68_x4v4d"]
+[ext_resource type="Texture2D" uid="uid://beupr7kcc2s4i" path="res://Rydia/images/spritesheets/leviathan/Summon/41_leviathan.png" id="69_4cqdd"]
+[ext_resource type="Texture2D" uid="uid://bmlwa7u47ypth" path="res://Rydia/images/spritesheets/leviathan/Summon/42_leviathan.png" id="70_0d2ng"]
+[ext_resource type="Texture2D" uid="uid://ceiuve7gpv0ul" path="res://Rydia/images/spritesheets/leviathan/Summon/43_leviathan.png" id="71_10i0y"]
+[ext_resource type="Texture2D" uid="uid://bs41kvh7a1era" path="res://Rydia/images/spritesheets/leviathan/Summon/44_leviathan.png" id="72_8cae3"]
+[ext_resource type="Texture2D" uid="uid://dim1np2cx6qj" path="res://Rydia/images/spritesheets/leviathan/Summon/45_leviathan.png" id="73_le06m"]
+[ext_resource type="Texture2D" uid="uid://uyc1kftc3cmi" path="res://Rydia/images/spritesheets/leviathan/Summon/46_leviathan.png" id="74_6gmat"]
+[ext_resource type="Texture2D" uid="uid://cl3e5ebg1odku" path="res://Rydia/images/spritesheets/leviathan/Summon/47_leviathan.png" id="75_r4i6n"]
+[ext_resource type="Texture2D" uid="uid://b5rt57a66kvpb" path="res://Rydia/images/spritesheets/leviathan/Summon/00_leviathan.png" id="76_2hp8v"]
+[ext_resource type="Texture2D" uid="uid://cn2vdm5y1m2x2" path="res://Rydia/images/spritesheets/leviathan/Summon/01_leviathan.png" id="77_85my1"]
+[ext_resource type="Texture2D" uid="uid://bjjfynb72fm1r" path="res://Rydia/images/spritesheets/leviathan/Summon/02_leviathan.png" id="78_vc6hv"]
+[ext_resource type="Texture2D" uid="uid://b8frb4laxxybk" path="res://Rydia/images/spritesheets/leviathan/Summon/03_leviathan.png" id="79_i1mk2"]
+[ext_resource type="Texture2D" uid="uid://dlmujlu7rpycc" path="res://Rydia/images/spritesheets/leviathan/Summon/04_leviathan.png" id="80_hesre"]
+[ext_resource type="Texture2D" uid="uid://s7wowsvjpmv2" path="res://Rydia/images/spritesheets/leviathan/Summon/05_leviathan.png" id="81_tgdm5"]
+[ext_resource type="Texture2D" uid="uid://c8h2id88s3ieo" path="res://Rydia/images/spritesheets/leviathan/Summon/06_leviathan.png" id="82_egyq3"]
+[ext_resource type="Texture2D" uid="uid://bj8njvd3l26p7" path="res://Rydia/images/spritesheets/leviathan/Summon/07_leviathan.png" id="83_bc8uf"]
+[ext_resource type="Texture2D" uid="uid://d3e13y8ti1774" path="res://Rydia/images/spritesheets/leviathan/Summon/08_leviathan.png" id="84_lbp1b"]
+[ext_resource type="Texture2D" uid="uid://bitf6thnlsq8h" path="res://Rydia/images/spritesheets/leviathan/Summon/09_leviathan.png" id="85_m38hx"]
+[ext_resource type="Texture2D" uid="uid://6a54iegr6vt2" path="res://Rydia/images/spritesheets/leviathan/Summon/10_leviathan.png" id="86_xneiw"]
+[ext_resource type="Texture2D" uid="uid://bjm0s4ahpwetb" path="res://Rydia/images/spritesheets/leviathan/Summon/11_leviathan.png" id="87_blne1"]
+[ext_resource type="Texture2D" uid="uid://bak5qvvejxbjv" path="res://Rydia/images/spritesheets/victory/20_victory.png" id="92_2msip"]
+[ext_resource type="Texture2D" uid="uid://h7dulkkmu0qv" path="res://Rydia/images/spritesheets/ramuh/00_ramuh_atk.png" id="92_wvn2c"]
+[ext_resource type="Texture2D" uid="uid://blg2wd162h1o5" path="res://Rydia/images/spritesheets/victory/21_victory.png" id="93_7v0uu"]
+[ext_resource type="Texture2D" uid="uid://bwoearqrxd2gk" path="res://Rydia/images/spritesheets/ramuh/01_ramuh_atk.png" id="93_736r8"]
+[ext_resource type="Texture2D" uid="uid://hv87emtd5q00" path="res://Rydia/images/spritesheets/ramuh/02_ramuh_atk.png" id="94_g85cn"]
+[ext_resource type="Texture2D" uid="uid://bpf6wjov1rric" path="res://Rydia/images/spritesheets/victory/22_victory.png" id="94_x4v4d"]
+[ext_resource type="Texture2D" uid="uid://dd35j6wrn67e4" path="res://Rydia/images/spritesheets/victory/23_victory.png" id="95_4cqdd"]
+[ext_resource type="Texture2D" uid="uid://b121kfho141f" path="res://Rydia/images/spritesheets/ramuh/03_ramuh_atk.png" id="95_8hkpi"]
+[ext_resource type="Texture2D" uid="uid://yjt7ufr2b3ey" path="res://Rydia/images/spritesheets/victory/06_victory.png" id="96_0d2ng"]
+[ext_resource type="Texture2D" uid="uid://bje7c0w1vvrpo" path="res://Rydia/images/spritesheets/ramuh/04_ramuh_atk.png" id="96_rhr2b"]
+[ext_resource type="Texture2D" uid="uid://cf68ir1la1ijv" path="res://Rydia/images/spritesheets/victory/07_victory.png" id="97_10i0y"]
+[ext_resource type="Texture2D" uid="uid://dxtjsd812yq7n" path="res://Rydia/images/spritesheets/ramuh/05_ramuh_atk.png" id="97_32ghd"]
+[ext_resource type="Texture2D" uid="uid://cn3qcopfs3lyc" path="res://Rydia/images/spritesheets/ramuh/06_ramuh_atk.png" id="98_0rx78"]
+[ext_resource type="Texture2D" uid="uid://6282pp5krbpk" path="res://Rydia/images/spritesheets/victory/08_victory.png" id="98_8cae3"]
+[ext_resource type="Texture2D" uid="uid://yyrnww1r1ux3" path="res://Rydia/images/spritesheets/victory/09_victory.png" id="99_le06m"]
+[ext_resource type="Texture2D" uid="uid://8561adkewhym" path="res://Rydia/images/spritesheets/ramuh/07_ramuh_atk.png" id="99_rksdx"]
+[ext_resource type="Texture2D" uid="uid://bioyg0woo6so2" path="res://Rydia/images/spritesheets/victory/10_victory.png" id="100_6gmat"]
+[ext_resource type="Texture2D" uid="uid://e8v8i7e6jyxr" path="res://Rydia/images/spritesheets/victory/11_victory.png" id="101_r4i6n"]
+[ext_resource type="Texture2D" uid="uid://ckp18w7i2kqr2" path="res://Rydia/images/spritesheets/victory/12_victory.png" id="102_2hp8v"]
+[ext_resource type="Texture2D" uid="uid://di1sa1j675o1" path="res://Rydia/images/spritesheets/victory/13_victory.png" id="103_85my1"]
+[ext_resource type="Texture2D" uid="uid://djdvj2m4hctw1" path="res://Rydia/images/spritesheets/victory/14_victory.png" id="104_vc6hv"]
+[ext_resource type="Texture2D" uid="uid://dbvvief1mdf60" path="res://Rydia/images/spritesheets/victory/15_victory.png" id="105_i1mk2"]
+[ext_resource type="Texture2D" uid="uid://c4oobu2r7d82j" path="res://Rydia/images/spritesheets/victory/16_victory.png" id="106_hesre"]
+[ext_resource type="Texture2D" uid="uid://dsdgmlvoce1gn" path="res://Rydia/images/spritesheets/victory/17_victory.png" id="107_tgdm5"]
+[ext_resource type="Texture2D" uid="uid://c5qhbnsc3ggsj" path="res://Rydia/images/spritesheets/victory/18_victory.png" id="108_egyq3"]
+[ext_resource type="Texture2D" uid="uid://cxufp2xow7fc6" path="res://Rydia/images/spritesheets/victory/19_victory.png" id="109_bc8uf"]
+[ext_resource type="Texture2D" uid="uid://bq4okefhihp7m" path="res://Rydia/images/spritesheets/dead/dead_0.png" id="110_2hp8v"]
+[ext_resource type="Texture2D" uid="uid://t274xm2qh0vp" path="res://Rydia/images/spritesheets/dead/dead_1.png" id="111_85my1"]
+[ext_resource type="Texture2D" uid="uid://ionveelldmuo" path="res://Rydia/images/spritesheets/cast/00_cast_before.png" id="112_vc6hv"]
+[ext_resource type="Texture2D" uid="uid://css0hwqgh3ill" path="res://Rydia/images/spritesheets/cast/01_cast_before.png" id="113_i1mk2"]
+[ext_resource type="Texture2D" uid="uid://20ut0ld40e00" path="res://Rydia/images/spritesheets/cast/02_cast_before.png" id="114_hesre"]
+[ext_resource type="Texture2D" uid="uid://c1m3s3oe5f5bg" path="res://Rydia/images/spritesheets/cast/03_cast_before.png" id="115_tgdm5"]
+[ext_resource type="Texture2D" uid="uid://c8jj1t8qlrqjf" path="res://Rydia/images/spritesheets/cast/00_cast_after.png" id="116_egyq3"]
+[ext_resource type="Texture2D" uid="uid://3jhmkx7fu48c" path="res://Rydia/images/spritesheets/cast/01_cast_after.png" id="117_bc8uf"]
+[ext_resource type="Texture2D" uid="uid://c374ekqc1w5ri" path="res://Rydia/images/spritesheets/cast/02_cast_after.png" id="118_lbp1b"]
+[ext_resource type="Texture2D" uid="uid://bollts5858tdn" path="res://Rydia/images/spritesheets/cast/03_cast_after.png" id="119_m38hx"]
+[ext_resource type="Texture2D" uid="uid://m7r4mppkwxlw" path="res://Rydia/images/spritesheets/dash/dash.png" id="120_tgdm5"]
+[ext_resource type="Texture2D" uid="uid://cy4fbdcdxkpj8" path="res://Rydia/images/spritesheets/block/00_block.png" id="121_egyq3"]
+[ext_resource type="Texture2D" uid="uid://cfev1bb6s755r" path="res://Rydia/images/spritesheets/block/01_block.png" id="122_bc8uf"]
+[ext_resource type="Texture2D" uid="uid://jq8tm6ns0xhk" path="res://Rydia/images/spritesheets/block/02_block.png" id="123_lbp1b"]
+[ext_resource type="Texture2D" uid="uid://ndy3kmh4cuh6" path="res://Rydia/images/spritesheets/block/03_block.png" id="124_m38hx"]
+
+[sub_resource type="Animation" id="Animation_l8emt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, -76)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Visuals/eidolon:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Visuals/eidolon:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-72, -363)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Visuals/eidolon:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Visuals/eidolon:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_q6rti"]
+resource_name = "attack_rydia"
+length = 0.35
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("39_mpvbm"), ExtResource("40_euf5a"), ExtResource("41_tgu0a"), ExtResource("42_l3bh0"), ExtResource("43_hpt5r"), ExtResource("44_gruqu"), ExtResource("45_fh2qj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(46, -160)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_krmrq"]
+resource_name = "block"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("121_egyq3"), ExtResource("122_bc8uf"), ExtResource("123_lbp1b"), ExtResource("124_m38hx")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-24, -76)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_blne1"]
+resource_name = "cast"
+length = 2.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.90000004, 1, 1.0999999, 1.2, 1.3000001, 1.4000001, 1.5, 1.6, 1.7, 1.8000001, 1.9, 2, 2.1, 2.2, 2.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("112_vc6hv"), ExtResource("113_i1mk2"), ExtResource("114_hesre"), ExtResource("115_tgdm5"), ExtResource("116_egyq3"), ExtResource("117_bc8uf"), ExtResource("118_lbp1b"), ExtResource("119_m38hx"), ExtResource("116_egyq3"), ExtResource("117_bc8uf"), ExtResource("118_lbp1b"), ExtResource("119_m38hx"), ExtResource("116_egyq3"), ExtResource("117_bc8uf"), ExtResource("118_lbp1b"), ExtResource("119_m38hx"), ExtResource("116_egyq3"), ExtResource("117_bc8uf"), ExtResource("118_lbp1b"), ExtResource("119_m38hx"), ExtResource("116_egyq3"), ExtResource("117_bc8uf"), ExtResource("118_lbp1b"), ExtResource("119_m38hx")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-7, -84), Vector2(22, -93)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_x8yo7"]
+resource_name = "dash"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("120_tgdm5")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(20, -82)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_xneiw"]
+resource_name = "die"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("110_2hp8v"), ExtResource("111_85my1")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(-10, -61), Vector2(-1, -25)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_2msip"]
+resource_name = "hurt"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("96_0d2ng")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-4, -82)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_3pxmo"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_7o6xj"), ExtResource("2_6gtlo"), ExtResource("3_ms24f"), ExtResource("4_w34st")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, -76)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_mpvbm"]
+resource_name = "leviathan"
+length = 2.3
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.6500001, 1.7, 1.75, 1.8, 1.85, 1.9, 1.9499999, 2, 2.0500002, 2.1, 2.15, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_24lo1"), ExtResource("6_4m5yq"), ExtResource("7_xt4o5"), ExtResource("8_mpvbm"), ExtResource("9_euf5a"), ExtResource("10_tgu0a"), ExtResource("11_l3bh0"), ExtResource("12_hpt5r"), ExtResource("13_gruqu"), ExtResource("14_fh2qj"), ExtResource("15_q6rti"), ExtResource("16_unyr5"), ExtResource("17_dwida"), ExtResource("18_h4xvd"), ExtResource("19_qstm0"), ExtResource("20_qqs2x"), ExtResource("21_jqjx6"), ExtResource("22_cxxtk"), ExtResource("23_mvcc4"), ExtResource("24_m80wp"), ExtResource("25_gqk5j"), ExtResource("26_dema1"), ExtResource("27_8ff63"), ExtResource("28_8fj2v"), ExtResource("29_a70ig"), ExtResource("30_wchdg"), ExtResource("31_guaww"), ExtResource("32_6pri3"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("37_xyjdh"), ExtResource("38_3276y")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19, -90)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 2.2666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Visuals/eidolon:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.9333333, 1.0000001, 1.0666667, 1.1333333, 1.2000002, 1.2666668, 1.3333334, 1.4, 1.4666668, 1.5333334, 1.6, 1.6666666, 1.7333333, 1.8, 1.8666666, 1.9333332, 1.9999998, 2.0666668, 2.1333334, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("46_j65ij"), ExtResource("47_p3y0c"), ExtResource("48_c3mrw"), ExtResource("49_prap4"), ExtResource("50_rodj5"), ExtResource("51_4ufm7"), ExtResource("52_ja1ml"), ExtResource("53_pyat1"), ExtResource("54_d84bf"), ExtResource("55_0uk6c"), ExtResource("56_wvn2c"), ExtResource("57_736r8"), ExtResource("58_g85cn"), ExtResource("67_7v0uu"), ExtResource("68_x4v4d"), ExtResource("69_4cqdd"), ExtResource("70_0d2ng"), ExtResource("71_10i0y"), ExtResource("72_8cae3"), ExtResource("73_le06m"), ExtResource("74_6gmat"), ExtResource("75_r4i6n"), ExtResource("76_2hp8v"), ExtResource("77_85my1"), ExtResource("78_vc6hv"), ExtResource("79_i1mk2"), ExtResource("80_hesre"), ExtResource("81_tgdm5"), ExtResource("82_egyq3"), ExtResource("83_bc8uf"), ExtResource("84_lbp1b"), ExtResource("85_m38hx"), ExtResource("86_xneiw"), ExtResource("87_blne1")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Visuals/eidolon:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-72, -363)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Visuals/eidolon:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Visuals/eidolon:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/13/type = "audio"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("AudioStreamPlayer2D")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("64_bc8uf")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/13/use_blend = true
+tracks/14/type = "audio"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("AudioStreamPlayer2D")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("65_lbp1b")
+}],
+"times": PackedFloat32Array(0.7)
+}
+tracks/14/use_blend = true
+tracks/15/type = "audio"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("AudioStreamPlayer2D")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"clips": [],
+"times": PackedFloat32Array()
+}
+tracks/15/use_blend = true
+
+[sub_resource type="Animation" id="Animation_7y26c"]
+resource_name = "ramuh"
+length = 1.9
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.6500001, 1.7, 1.75, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_24lo1"), ExtResource("6_4m5yq"), ExtResource("7_xt4o5"), ExtResource("8_mpvbm"), ExtResource("9_euf5a"), ExtResource("10_tgu0a"), ExtResource("11_l3bh0"), ExtResource("12_hpt5r"), ExtResource("13_gruqu"), ExtResource("14_fh2qj"), ExtResource("15_q6rti"), ExtResource("16_unyr5"), ExtResource("17_dwida"), ExtResource("18_h4xvd"), ExtResource("19_qstm0"), ExtResource("20_qqs2x"), ExtResource("21_jqjx6"), ExtResource("22_cxxtk"), ExtResource("23_mvcc4"), ExtResource("24_m80wp"), ExtResource("25_gqk5j"), ExtResource("26_dema1"), ExtResource("27_8ff63"), ExtResource("28_8fj2v"), ExtResource("29_a70ig"), ExtResource("30_wchdg"), ExtResource("31_guaww"), ExtResource("32_6pri3"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("38_3276y")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19, -90)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.6, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Visuals/eidolon:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.6, 0.70000005, 0.8, 0.8833333, 0.9666667, 1.05, 1.1333334, 1.2166667, 1.3, 1.4, 1.4999999, 1.5833333, 1.6666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("92_wvn2c"), ExtResource("93_736r8"), ExtResource("94_g85cn"), ExtResource("95_8hkpi"), ExtResource("96_rhr2b"), ExtResource("97_32ghd"), ExtResource("98_0rx78"), ExtResource("99_rksdx"), ExtResource("92_wvn2c"), ExtResource("93_736r8"), ExtResource("94_g85cn"), ExtResource("95_8hkpi"), ExtResource("96_rhr2b")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Visuals/eidolon:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-132, -255)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Visuals/eidolon:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Visuals/eidolon:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.68333334, 1.6666666, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_g6ho0"]
+resource_name = "retreat"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("96_0d2ng"), ExtResource("97_10i0y"), ExtResource("98_8cae3"), ExtResource("99_le06m"), ExtResource("100_6gmat")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-4, -82)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_jup7w"]
+resource_name = "summon_cast"
+length = 1.7
+step = 0.016666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.65),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_24lo1"), ExtResource("6_4m5yq"), ExtResource("7_xt4o5"), ExtResource("8_mpvbm"), ExtResource("9_euf5a"), ExtResource("10_tgu0a"), ExtResource("11_l3bh0"), ExtResource("12_hpt5r"), ExtResource("13_gruqu"), ExtResource("14_fh2qj"), ExtResource("15_q6rti"), ExtResource("16_unyr5"), ExtResource("17_dwida"), ExtResource("18_h4xvd"), ExtResource("19_qstm0"), ExtResource("20_qqs2x"), ExtResource("21_jqjx6"), ExtResource("22_cxxtk"), ExtResource("23_mvcc4"), ExtResource("24_m80wp"), ExtResource("25_gqk5j"), ExtResource("26_dema1"), ExtResource("27_8ff63"), ExtResource("28_8fj2v"), ExtResource("29_a70ig"), ExtResource("30_wchdg"), ExtResource("31_guaww"), ExtResource("32_6pri3"), ExtResource("33_f8usp"), ExtResource("34_blaty"), ExtResource("35_uf58k"), ExtResource("36_exui7"), ExtResource("37_xyjdh"), ExtResource("38_3276y")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19, -90)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_lbp1b"]
+resource_name = "victory"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("92_2msip"), ExtResource("93_7v0uu"), ExtResource("94_x4v4d"), ExtResource("95_4cqdd")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-4, -82)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_m38hx"]
+resource_name = "victory_before"
+length = 0.9334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Visuals/rydia:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334, 0.4, 0.46666667, 0.53333336, 0.6, 0.6666667, 0.73333335, 0.8, 0.8666667, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("96_0d2ng"), ExtResource("97_10i0y"), ExtResource("98_8cae3"), ExtResource("99_le06m"), ExtResource("100_6gmat"), ExtResource("101_r4i6n"), ExtResource("102_2hp8v"), ExtResource("103_85my1"), ExtResource("104_vc6hv"), ExtResource("105_i1mk2"), ExtResource("106_hesre"), ExtResource("107_tgdm5"), ExtResource("108_egyq3"), ExtResource("109_bc8uf"), ExtResource("93_7v0uu")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Visuals/rydia:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-4, -82)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Visuals/rydia:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Visuals/rydia:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Visuals/reference:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Visuals/vfx:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Visuals/vfx2:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Visuals/eidolon:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Visuals/rydia:z_index")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5a0hv"]
+_data = {
+&"RESET": SubResource("Animation_l8emt"),
+&"attack_rydia": SubResource("Animation_q6rti"),
+&"block": SubResource("Animation_krmrq"),
+&"cast": SubResource("Animation_blne1"),
+&"dash": SubResource("Animation_x8yo7"),
+&"die": SubResource("Animation_xneiw"),
+&"hurt": SubResource("Animation_2msip"),
+&"idle": SubResource("Animation_3pxmo"),
+&"leviathan": SubResource("Animation_mpvbm"),
+&"ramuh": SubResource("Animation_7y26c"),
+&"retreat": SubResource("Animation_g6ho0"),
+&"summon_cast": SubResource("Animation_jup7w"),
+&"victory": SubResource("Animation_lbp1b"),
+&"victory_before": SubResource("Animation_m38hx")
+}
+
+[node name="Rydia" type="Node2D"]
+
+[node name="Visuals" type="Node2D" parent="."]
+
+[node name="rydia" type="Sprite2D" parent="Visuals"]
+position = Vector2(2, -76)
+scale = Vector2(-1, 1)
+
+[node name="reference" type="Sprite2D" parent="Visuals"]
+visible = false
+position = Vector2(2, -76)
+scale = Vector2(-1, 1)
+texture = ExtResource("1_7o6xj")
+
+[node name="eidolon" type="Sprite2D" parent="Visuals"]
+visible = false
+position = Vector2(-72, -363)
+scale = Vector2(-1, 1)
+
+[node name="vfx" type="Sprite2D" parent="Visuals"]
+visible = false
+
+[node name="vfx2" type="Sprite2D" parent="Visuals"]
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_5a0hv")
+}
+autoplay = "idle"
+
+[node name="Bounds" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -107.0
+offset_top = -225.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

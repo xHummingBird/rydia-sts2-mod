@@ -1,6 +1,10 @@
-﻿namespace Rydia.RydiaCode.Powers;
+﻿using MegaCrit.Sts2.Core.Entities.Powers;
 
-public class EvokePower
+namespace Rydia.RydiaCode.Powers;
+
+public class EvokePower : RydiaPower
 {
-    
+    public override PowerType Type => PowerType.Buff;
+
+    public override PowerStackType StackType => PowerStackType.Single;
 }

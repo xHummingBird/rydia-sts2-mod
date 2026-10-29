@@ -1,3 +1,38 @@
 {
+  "RYDIA-STRIKE_RYDIA.description": "Deal {Damage:diff()} damage.",
+  "RYDIA-STRIKE_RYDIA.title": "Strike",
+
+  "RYDIA-PETRIFYING_BREATH.description": "Deal {Damage:diff()} damage and {FreezePower:diff()} [blue]Freeze[/blue] to ALL enemies. \n{ResonanceIcon}: Does not consume {ResonanceIcon}.",
+  "RYDIA-PETRIFYING_BREATH.title": "Petrifying Breath",
+
+  "RYDIA-MIST_BREATH.description": "Deal {Damage:diff()} damage. \n{ResonanceIcon}: Deal 5 additional for each debuff on the enemy.",
+  "RYDIA-MIST_BREATH.title": "Mist Breath",
   
+  "RYDIA-DEFEND_RYDIA.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "RYDIA-DEFEND_RYDIA.title": "Defend",
+
+  "RYDIA-GAIAS_WRATH.description": "Deal {Damage:diff()} damage to ALL enemies and reduce their [gold]Strength[/gold] by {GaiasWrathPower:diff()}. \n{ResonanceIcon}: Double [gold]Strength[/gold] reduction.",
+  "RYDIA-GAIAS_WRATH.title": "Gaia's Wrath",
+
+  "RYDIA-BURST_STORM.description": "Deal {Damage:diff()} damage. \nCosts 0 {energyPrefix:energyIcons(1)} if you played an [gold]Eidolon[/gold] card this turn.",
+  "RYDIA-BURST_STORM.title": "Burst Storm",
+
+  "RYDIA-TORNADO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times to ALL enemies.",
+  "RYDIA-TORNADO.title": "Tornado",
+
+  "RYDIA-WHIP_DANCE.description": "Deal {Damage:diff()} damage 2 times. \nPlay a random {IfUpgraded:show:[gold]Upgraded[/gold]|} Attack from your [gold]Draw Pile[/gold].",
+  "RYDIA-WHIP_DANCE.title": "Whip Dance",
+
+  "RYDIA-WHIP_STRIKE.description": "Deal {Damage:diff()} damage. \nGain {Summon:diff()} [gold]Summon[/gold].",
+  "RYDIA-WHIP_STRIKE.title": "Whip Strike",
+
+  "RYDIA-MEGAFLARE.description": "At the end of {MegaflarePower:diff()} turns, deal {Damage:diff()} damage to ALL enemies.",
+  "RYDIA-MEGAFLARE.title": "Megaflare",
+
+  "RYDIA-REDEMPTION.description": "Gain {Block:diff()} [gold]Block[/gold]. \nPut a card from your [gold]Discard Pile[/gold] on top of your [gold]Draw Pile[/gold].",
+  "RYDIA-REDEMPTION.selectionScreenPrompt": "Choose a card to put on top of your Draw Pile.",
+  "RYDIA-REDEMPTION.title": "Redemption",
+
+  "RYDIA-ZANTETSUKEN.description": "Deal {Damage:diff()} damage. \n{ResonanceIcon}: Kill the enemy if it has [blue]{HpThreshold:diff()}%[/blue] HP or less.",
+  "RYDIA-ZANTETSUKEN.title": "Zantetsuken"
 }

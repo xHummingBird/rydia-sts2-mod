@@ -1,6 +1,56 @@
-﻿namespace Rydia.RydiaCode.Cards.Uncommon;
+﻿using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Runs;
+using MegaCrit.Sts2.Core.ValueProps;
+using Rydia.RydiaCode.Extensions;
+using Rydia.RydiaCode.Mechanics;
+using Rydia.RydiaCode.Powers;
 
-public class Thundaga
+namespace Rydia.RydiaCode.Cards.Uncommon;
+
+public class Thundaga() : RydiaCard(2, CardType.Attack,
+    CardRarity.Uncommon, TargetType.AnyEnemy), IMagicCard
 {
+protected override IEnumerable<DynamicVar> CanonicalVars =>
+[
+    new DamageVar(12m, ValueProp.Move),
+    new PowerVar<ShockPower>(3m)
+];
     
+protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+[
+    HoverTipFactory.FromPower<ShockPower>(),
+];
+
+protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
+{
+    var ownerCreature = Owner?.Creature;
+    CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);
+    if (ownerCreature != null && Owner?.Character is Character.Rydia rydia)
+    {
+        AudioHelper.PlayRandomMagic();
+        SfxCmd.Play("res://Rydia/sfx/magic_cast.mp3", 1.1f);
+        rydia.PlayAnimation(ownerCreature, "cast");
+        await Task.Delay(200);
+        foreach (var enemy in CombatState.HittableEnemies)
+            rydia.PlayVfxOnTarget(
+                enemy,
+                "res://Rydia/scenes/vfx.tscn",
+                "thunder");
+    }
+    await CommonActions.CardAttack(this, play.Target)
+        .WithHitFx(null, "event:/sfx/characters/defect/defect_lightning_passive")
+        .Execute(choiceContext);
+    await PowerCmd.Apply<ShockPower>(choiceContext, CombatState.HittableEnemies, DynamicVars["ShockPower"].BaseValue, Owner.Creature, this);
+}
+
+protected override void OnUpgrade()
+{
+    DynamicVars.Damage.UpgradeValueBy(4m);
+    DynamicVars["ShockPower"].UpgradeValueBy(1);
+}
 }

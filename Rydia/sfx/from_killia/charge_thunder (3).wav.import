@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b0kqa6fndoftp"
+path="res://.godot/imported/charge_thunder (3).wav-bf9ca10d2b5b1872b515ffe0fbadc530.sample"
+
+[deps]
+
+source_file="res://Rydia/sfx/from_killia/charge_thunder (3).wav"
+dest_files=["res://.godot/imported/charge_thunder (3).wav-bf9ca10d2b5b1872b515ffe0fbadc530.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

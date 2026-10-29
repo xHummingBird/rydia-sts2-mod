@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://iiu0o02sr46o"
+path="res://.godot/imported/08 Defeat.mp3-21378091fbca6b869f7efd56eece6272.mp3str"
+
+[deps]
+
+source_file="res://Rydia/music/08 Defeat.mp3"
+dest_files=["res://.godot/imported/08 Defeat.mp3-21378091fbca6b869f7efd56eece6272.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,3 +1,17 @@
 {
+  "RYDIA-EIDOLON_RESONANCE_POWER.description": "Empowers your next [gold]Eidolon[/gold] card, causing it to deal double damage and apply an additional effect.",
+  "RYDIA-EIDOLON_RESONANCE_POWER.smartDescription": "Your next [gold]Eidolon[/gold] card deals double damage and applies an additional effect.",
+  "RYDIA-EIDOLON_RESONANCE_POWER.title": "Eidolon Resonance",
   
+  "RYDIA-FREEZE_POWER.description": "Deals 20% less damage with Attacks. Double damage reduction if the attacker is [gold]Conductive[/gold].",
+  "RYDIA-FREEZE_POWER.smartDescription": "Deals 20% less damage with Attacks for {Amount} turn(s). Double damage reduction if creature is [gold]Conductive[/gold]",
+  "RYDIA-FREEZE_POWER.title": "Freeze",
+
+  "RYDIA-GAIAS_WRATH_POWER.description": "Attacks deal less damage this turn.",
+  "RYDIA-GAIAS_WRATH_POWER.smartDescription": "Attacks deal [blue]{Amount}[/blue] less damage this turn.",
+  "RYDIA-GAIAS_WRATH_POWER.title": "Gaia's Wrath",
+
+  "RYDIA-EVOKE_POWER.description": "Empowers your next [gold]Eidolon[/gold] card, causing it to deal double damage and apply an additional effect.",
+  "RYDIA-EVOKE_POWER.smartDescription": "Your next [gold]Eidolon[/gold] card deals double damage and applies an additional effect.",
+  "RYDIA-EVOKE_POWER.title": "Evoke"
 }

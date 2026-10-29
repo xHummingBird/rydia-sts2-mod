@@ -1,3 +1,7 @@
 {
+  "RYDIA_SUMMON.title": "Summon",
+  "RYDIA_SUMMON.description": "At 100 Summon, gain [gold]Eidolon Resonance[/gold].\n\nWhile you have [gold]Eidolon Resonance[/gold], Eidolon cards deal double damage and apply additional effects. Playing an [gold]Eidolon[/gold] card consumes it.\n\nGain 5 Summon at the start of your turn.\nGain 5 Summon whenever you play an Attack.\nGain 7 Summon whenever you play an Eidolon card.",
   
+  "RYDIA_EIDOLON.title": "Eidolon",
+  "RYDIA_EIDOLON.description": "Gain 7 [gold]Summon[/gold] when you play this card. During [gold]Eidolon Resonance[/gold], Eidolon cards deal double damage and apply additional effects."
 }

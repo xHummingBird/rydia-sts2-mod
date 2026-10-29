@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqwpip26te6gx"
+path="res://.godot/imported/victory (4).wav-aa82fe9b09c2ab321efa3450bd906a20.sample"
+
+[deps]
+
+source_file="res://Rydia/sounds/victory (4).wav"
+dest_files=["res://.godot/imported/victory (4).wav-aa82fe9b09c2ab321efa3450bd906a20.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
