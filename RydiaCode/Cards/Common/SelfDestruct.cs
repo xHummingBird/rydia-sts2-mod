@@ -61,6 +61,7 @@ public class SelfDestruct() : RydiaCard(1, CardType.Attack,
                     await power.Trigger();
                 }
             }
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

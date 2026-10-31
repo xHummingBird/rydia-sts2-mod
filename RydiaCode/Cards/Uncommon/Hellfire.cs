@@ -101,7 +101,7 @@ public class Hellfire() : RydiaCard(2, CardType.Attack,
         else  
             await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target)
                 .Execute(choiceContext);
-        if (Owner.HasPower<EidolonResonancePower>())
+        if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
             await PowerCmd.Apply<BurnPower>(choiceContext, CombatState.HittableEnemies, powerAmount, Owner.Creature, this);
         else 
             await PowerCmd.Apply<BurnPower>(choiceContext, play.Target, powerAmount, Owner.Creature, this);

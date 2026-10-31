@@ -66,7 +66,7 @@ public class JudgmentBolt() : RydiaCard(2, CardType.Attack,
                 return null;
             })
             .Execute(choiceContext);
-        if (Owner.HasPower<EidolonResonancePower>())
+        if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
             await PowerCmd.Apply<ShockPersistencePower>(choiceContext, CombatState.HittableEnemies, 2, Owner.Creature, this);
         await PowerCmd.Apply<ShockPower>(choiceContext, CombatState.HittableEnemies, DynamicVars["ShockPower"].BaseValue, Owner.Creature, this);
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);

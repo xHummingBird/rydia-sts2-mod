@@ -13,5 +13,85 @@
 
   "RYDIA-EVOKE_POWER.description": "Empowers your next [gold]Eidolon[/gold] card, causing it to deal double damage and apply an additional effect.",
   "RYDIA-EVOKE_POWER.smartDescription": "Your next [gold]Eidolon[/gold] card deals double damage and applies an additional effect.",
-  "RYDIA-EVOKE_POWER.title": "Evoke"
+  "RYDIA-EVOKE_POWER.title": "Evoke",
+  
+  "RYDIA-PRIDE_OF_MIST_VILLAGE_POWER.description": "At the start of your turn, add a random [gold]Eidolon[/gold] into your [gold]Hand[/gold]. It gains [gold]Exhaust[/gold].",
+  "RYDIA-PRIDE_OF_MIST_VILLAGE_POWER.smartDescription": "At the start of your turn, add [blue]{Amount}[/blue] random {Amount:plural:[gold]Eidolon[/gold]|[gold]Eidolons[/gold]} into your [gold]Hand[/gold]. {Amount:plural:It gains|They gain} [gold]Exhaust[/gold].",
+  "RYDIA-PRIDE_OF_MIST_VILLAGE_POWER.title": "Pride of Mist Village",
+
+  "RYDIA-ASURAS_BOON_POWER.description": "At the start of your turn, randomly apply [blue]3[/blue] [gold]Burn[/gold], [blue]3[/blue] [gold]Shock[/gold], or [blue]1[/blue] [gold]Freeze[/gold] to a random enemy.",
+  "RYDIA-ASURAS_BOON_POWER.smartDescription": "At the start of your turn, randomly apply [blue]3[/blue] [gold]Burn[/gold], [blue]3[/blue] [gold]Shock[/gold], or [blue]1[/blue] [gold]Freeze[/gold] to a random enemy [blue]{Amount}[/blue] {Amount:plural:time|times}.",
+  "RYDIA-ASURAS_BOON_POWER.title": "Asura's Boon",
+
+  "RYDIA-BLESS_POWER.description": "Whenever you play an [gold]Eidolon[/gold], gain [blue]1[/blue] [gold]Strength[/gold].",
+  "RYDIA-BLESS_POWER.smartDescription": "Whenever you play an [gold]Eidolon[/gold], gain [blue]{Amount}[/blue] [gold]Strength[/gold].",
+  "RYDIA-BLESS_POWER.title": "Bless",
+
+  "RYDIA-RAMUHS_LIGHTNING_POWER.description": "Whenever you apply [gold]Shock[/gold], apply [blue]1[/blue] more [gold]Shock[/gold].",
+  "RYDIA-RAMUHS_LIGHTNING_POWER.smartDescription": "Whenever you apply [gold]Shock[/gold], apply [blue]{Amount}[/blue] more [gold]Shock[/gold].",
+  "RYDIA-RAMUHS_LIGHTNING_POWER.title": "Ramuh's Lightning",
+
+  "RYDIA-SUMMON_MASTERY_POWER.description": "[gold]Eidolon[/gold] cards gain [gold]Retain[/gold]. At the start of your turn, gain [blue]5[/blue] [gold]Summon[/gold].",
+  "RYDIA-SUMMON_MASTERY_POWER.smartDescription": "[gold]Eidolon[/gold] cards gain [gold]Retain[/gold]. At the start of your turn, gain [blue]{Amount}[/blue] [gold]Summon[/gold].",
+  "RYDIA-SUMMON_MASTERY_POWER.title": "Summon Mastery",
+
+  "RYDIA-MOTHERS_PROTECTION_POWER.description": "Whenever you play an [gold]Eidolon[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
+  "RYDIA-MOTHERS_PROTECTION_POWER.smartDescription": "Whenever you play an [gold]Eidolon[/gold], gain [blue]{Amount}[/blue] [gold]Block[/gold].",
+  "RYDIA-MOTHERS_PROTECTION_POWER.title": "Mother's Protection",
+
+  "RYDIA-EIDOLONS_PROWESS_POWER.description": "[gold]Eidolon[/gold] cards deal [blue]25%[/blue] more damage.",
+  "RYDIA-EIDOLONS_PROWESS_POWER.smartDescription": "[gold]Eidolon[/gold] cards deal [blue]{Amount}%[/blue] more damage.",
+  "RYDIA-EIDOLONS_PROWESS_POWER.title": "Eidolon's Prowess",
+
+  "RYDIA-FEYMARCHS_BLESSING_POWER.description": "Whenever you draw an [gold]Eidolon[/gold], draw [blue]1[/blue] card.",
+  "RYDIA-FEYMARCHS_BLESSING_POWER.smartDescription": "Whenever you draw an [gold]Eidolon[/gold], draw [blue]{Amount}[/blue] {Amount:plural:card|cards}.",
+  "RYDIA-FEYMARCHS_BLESSING_POWER.title": "Feymarch's Blessing",
+
+  "RYDIA-OMNICAST_POWER.description": "Whenever you apply a debuff to an enemy, they take [blue]5[/blue] damage.",
+  "RYDIA-OMNICAST_POWER.smartDescription": "Whenever you apply a debuff to an enemy, they take [blue]{Amount}[/blue] damage.",
+  "RYDIA-OMNICAST_POWER.title": "Omnicast",
+
+  "RYDIA-PIERCING_MAGIC_POWER.description": "Your first Attack each turn deals [blue]50%[/blue] more damage.",
+  "RYDIA-PIERCING_MAGIC_POWER.smartDescription": "Your first Attack each turn deals [blue]{Amount}%[/blue] more damage.",
+  "RYDIA-PIERCING_MAGIC_POWER.title": "Piercing Magic",
+
+  "RYDIA-DUALCAST_POWER.description": "Your first Attack each turn is played twice.",
+  "RYDIA-DUALCAST_POWER.smartDescription": "Your first [blue]{Amount}[/blue] {Amount:plural:Attack|Attacks} each turn {Amount:plural:is|are} played twice.",
+  "RYDIA-DUALCAST_POWER.title": "Dualcast",
+
+  "RYDIA-FAST_TALKER_POWER.description": "The first time you play an [gold]Eidolon[/gold] each turn, gain [blue]1[/blue] [gold]Energy[/gold].",
+  "RYDIA-FAST_TALKER_POWER.smartDescription": "The first time you play an [gold]Eidolon[/gold] each turn, gain {Amount:energyIcons()}.",
+  "RYDIA-FAST_TALKER_POWER.title": "Fast Talker",
+
+  "RYDIA-IFRITS_FLAME_POWER.description": "Whenever you deal unblocked attack damage, apply [blue]1[/blue] [gold]Burn[/gold].",
+  "RYDIA-IFRITS_FLAME_POWER.smartDescription": "Whenever you deal unblocked attack damage, apply [blue]{Amount}[/blue] [gold]Burn[/gold].",
+  "RYDIA-IFRITS_FLAME_POWER.title": "Ifrit's Flame",
+  
+  "RYDIA-BURN_POWER.description": "At the end of this creature's turn, take damage equal to [blue]Burn[/blue], then reduce [blue]Burn[/blue] by 1. If this creature has [blue]Freeze[/blue], [blue]Burn[/blue] triggers twice.",
+  "RYDIA-BURN_POWER.smartDescription": "At the end of this creature's turn, take [blue]{Amount}[/blue] damage, then reduce [blue]Burn[/blue] by 1. If this creature has [blue]Freeze[/blue], [blue]Burn[/blue] triggers twice.",
+  "RYDIA-BURN_POWER.title": "Burn",
+
+  "RYDIA-SHOCK_POWER.description": "When this creature is attacked, take damage equal to [blue]Shock[/blue], then remove [blue]Shock[/blue]. Damage is doubled if this creature has [gold]Burn[/gold].",
+  "RYDIA-SHOCK_POWER.smartDescription": "The next time this creature is attacked, it takes [blue]{Amount}[/blue] damage, then remove [blue]Shock[/blue]. Damage is doubled if this creature has [gold]Burn[/gold].",
+  "RYDIA-SHOCK_POWER.title": "Shock",
+
+  "RYDIA-CONDUCTIVE_POWER.description": "[blue]Freeze[/blue] reduces Attack damage twice as much.",
+  "RYDIA-CONDUCTIVE_POWER.smartDescription": "For [blue]{Amount}[/blue] {Amount:plural:turn|turns}, [blue]Freeze[/blue] reduces Attack damage twice as much.",
+  "RYDIA-CONDUCTIVE_POWER.title": "Conductive",
+
+  "RYDIA-DIAMOND_DUST_POWER.description": "[blue]Freeze[/blue] reduces Attack damage twice as much.",
+  "RYDIA-DIAMOND_DUST_POWER.smartDescription": "For [blue]{Amount}[/blue] {Amount:plural:turn|turns}, [blue]Freeze[/blue] reduces Attack damage twice as much.",
+  "RYDIA-DIAMOND_DUST_POWER.title": "Diamond Dust",
+
+  "RYDIA-FLAME_SHIELD_POWER.description": "When this creature is attacked, apply [blue]Burn[/blue] to the attacker.",
+  "RYDIA-FLAME_SHIELD_POWER.smartDescription": "When this creature is attacked, apply [blue]{Amount}[/blue] [gold]Burn[/gold] to the attacker.",
+  "RYDIA-FLAME_SHIELD_POWER.title": "Flame Shield",
+
+  "RYDIA-MEGAFLARE_POWER.description": "At the end of [blue]3[/blue] turns, deal [blue]30[/blue] damage to ALL enemies.",
+  "RYDIA-MEGAFLARE_POWER.smartDescription": "At the end of [blue]{Amount}[/blue] {Amount:plural:turn|turns}, deal [blue]30[/blue] damage to ALL enemies.",
+  "RYDIA-MEGAFLARE_POWER.title": "Megaflare",
+
+  "RYDIA-SHOCK_PERSISTENCE_POWER.description": "[gold]Shock[/gold] is not removed when triggered.",
+  "RYDIA-SHOCK_PERSISTENCE_POWER.smartDescription": "For [blue]{Amount}[/blue] {Amount:plural:turn|turns}, [gold]Shock[/gold] is not removed when triggered.",
+  "RYDIA-SHOCK_PERSISTENCE_POWER.title": "Shock Persistence"
 }

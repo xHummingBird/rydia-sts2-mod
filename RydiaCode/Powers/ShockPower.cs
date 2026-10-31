@@ -38,7 +38,6 @@ public class ShockPower : RydiaPower
     }
 
     public override Task BeforeCardPlayed(
-        PlayerChoiceContext choiceContext,
         CardPlay cardPlay)
     {
         Data data = GetInternalData<Data>();
@@ -48,7 +47,7 @@ public class ShockPower : RydiaPower
         data.PersistenceChecked = false;
         data.HadShockPersistenceBeforeAttack = false;
         data.ShockTriggered = false;
-
+        
         return Task.CompletedTask;
     }
 

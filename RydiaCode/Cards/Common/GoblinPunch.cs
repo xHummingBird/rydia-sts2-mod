@@ -43,7 +43,7 @@ public class GoblinPunch() : RydiaCard(1, CardType.Attack,
         
         finalDamage = RollRandomDamage();
 
-        if (Owner.HasPower<EidolonResonancePower>())
+        if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
             finalDamage = maximumDamage;
         
         CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);

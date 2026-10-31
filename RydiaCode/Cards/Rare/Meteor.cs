@@ -13,6 +13,7 @@ using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Settings;
 using MegaCrit.Sts2.Core.ValueProps;
 using Rydia.RydiaCode.Extensions;
+using Rydia.RydiaCode.Mechanics;
 
 namespace Rydia.RydiaCode.Cards.Rare;
 
@@ -20,7 +21,7 @@ public class Meteor() : RydiaCard(
     0,
     CardType.Attack,
     CardRarity.Rare,
-    TargetType.AllEnemies)
+    TargetType.AllEnemies), IMagicCard
 {
     protected override bool HasEnergyCostX => true;
 

@@ -25,14 +25,25 @@ public class BladeOfTheRealm() : RydiaCard(0, CardType.Attack,
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new CalculationBaseVar(5m),
-        new CalculationExtraVar(5m),
+        new ExtraDamageVar(5m),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier(
             (CardModel card, Creature? _) =>
-                CombatManager.Instance.History.CardPlaysFinished.Count(
-                    entry =>
-                        entry.HappenedThisTurn(card.CombatState) &&
-                        entry.CardPlay.Card.Type == CardType.Attack &&
-                        entry.CardPlay.Player == card.Owner))
+            {
+                int attackCount =
+                    CombatManager.Instance.History.CardPlaysFinished.Count(
+                        entry =>
+                            entry.HappenedThisTurn(card.CombatState) &&
+                            entry.CardPlay.Card.Type == CardType.Attack &&
+                            entry.CardPlay.Player == card.Owner);
+
+                bool hasResonance =
+                    card.Owner.Creature.HasPower<EidolonResonancePower>() ||
+                    card.Owner.Creature.HasPower<EvokePower>();
+
+                return hasResonance
+                    ? attackCount * 2
+                    : attackCount;
+            })
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -44,36 +55,33 @@ public class BladeOfTheRealm() : RydiaCard(0, CardType.Attack,
     {
         var ownerCreature = Owner?.Creature;
         CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);
-        decimal threshold = DynamicVars["HpThreshold"].BaseValue;
         if (ownerCreature != null && Owner?.Character is Character.Rydia rydia)
         {
             AudioHelper.PlayRandomSummon();
             rydia.PlayAnimation(ownerCreature, "summon_cast");
             SfxCmd.Play("res://Rydia/sfx/summon_cast.mp3", 1.1f);
+            await Task.Delay(200);
             rydia.PlayVfxOnTarget(
                 play.Target, 
                 "res://Rydia/scenes/vfx.tscn", 
-                "odin_vfx");
-            await Task.Delay(467);
-            SfxCmd.Play("res://Rydia/sfx/zantetsuken_2.wav");
-            await Task.Delay(267);
-            SfxCmd.Play("res://Rydia/sfx/zantetsuken_2.wav");
-            await Task.Delay(266);
-            SfxCmd.Play("res://Rydia/sfx/zantetsuken_2.wav");
-            await Task.Delay(233);
+                "asura");
+            await Task.Delay(367);
             SfxCmd.Play("res://Rydia/sfx/sword_swing_heavy.wav");
-            
+            await Task.Delay(33);
+            RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, play.Target, "res://Rydia/sfx/tornado_hit.wav", "res://Rydia/sfx/zantetsuken_1.wav", playHitVfx: false);
+            await Task.Delay(100);
+            RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, play.Target, "res://Rydia/sfx/slash_1.wav", playHitVfx: false);
+            await Task.Delay(100);
+            RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, play.Target, "res://Rydia/sfx/slash_1.wav", playHitVfx: false);
+            await Task.Delay(100);
+            RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, play.Target, "res://Rydia/sfx/slash_1.wav", playHitVfx: false);
+            await Task.Delay(100);
+            RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, play.Target, "res://Rydia/sfx/slash_1.wav", playHitVfx: false);
         }
-        else await CommonActions.CardAttack(this, play.Target)
-            .WithHitFx(null, "res://Rydia/sfx/zantetsuken_1.wav")
+        await CommonActions.CardAttack(this, play.Target)
+            .WithHitFx(null, "res://Rydia/sfx/slash_1.wav")
             .Execute(choiceContext);
-        await Task.Delay(1000);
-        if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
-            if (play.Target.CurrentHp * 100 <= play.Target.MaxHp * threshold && play.Target.CurrentHp > 0)
-            {
-                await DoomPower.DoomKill(new List<Creature> { play.Target });
-                return;
-            }
+        await Task.Delay(250);
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 

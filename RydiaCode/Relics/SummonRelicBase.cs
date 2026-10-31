@@ -1,4 +1,6 @@
-﻿using MegaCrit.Sts2.Core.Combat;
+﻿using BaseLib.Extensions;
+using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -10,8 +12,10 @@ using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Saves.Runs;
 using Rydia.RydiaCode.Cards;
+using Rydia.RydiaCode.Cards.Basic;
 using Rydia.RydiaCode.Extensions;
 using Rydia.RydiaCode.Mechanics;
+using Rydia.RydiaCode.Powers;
 
 namespace Rydia.RydiaCode.Relics;
 
@@ -97,8 +101,8 @@ public abstract class SummonRelicBase : RydiaRelic
     }
 
     public override async Task AfterCardPlayed(
-        PlayerChoiceContext choiceContext,
-        CardPlay cardPlay)
+    PlayerChoiceContext choiceContext,
+    CardPlay cardPlay)
     {
         if (!CombatManager.Instance.IsInProgress)
             return;
@@ -112,23 +116,33 @@ public abstract class SummonRelicBase : RydiaRelic
             return;
 
         int amount = 0;
-        
-        Character.Rydia? rydia = Owner?.Character as Character.Rydia;
+
+        Character.Rydia? rydia = Owner.Character as Character.Rydia;
+
+        bool isEidolon = card is IEidolonCard;
+        bool hasEvoke = isEidolon && Owner.HasPower<EvokePower>();
 
         /*
-         * Check IEidolonCard first.
+         * Eidolon cards take priority over normal Attack cards.
          *
-         * This ensures an Eidolon Attack gives 7 Summon rather than
-         * also being treated as a normal Attack and only giving 5.
+         * If Evoke is active, the Eidolon does not generate Summon.
+         * Otherwise, the Eidolon generates Summon normally, including
+         * while Eidolon Resonance is active.
          */
-        if (card is IEidolonCard)
+        if (isEidolon)
         {
-            amount = CalculateEidolonCardGain(card);
-            
-            amount = ModifyEidolonCardSummonGain(
-                card,
-                amount);
-            rydia.PlayAnimation(Owner.Creature, "idle");
+            if (!hasEvoke)
+            {
+                amount = CalculateEidolonCardGain(card);
+
+                amount = ModifyEidolonCardSummonGain(
+                    card,
+                    amount);
+            }
+
+            rydia?.PlayAnimation(
+                Owner.Creature,
+                "idle");
         }
         else if (card.Type == CardType.Attack)
         {
@@ -138,24 +152,57 @@ public abstract class SummonRelicBase : RydiaRelic
                 card,
                 amount);
         }
-        
+
         if (card is IMagicCard)
-            rydia.PlayAnimation(Owner.Creature, "idle");
+        {
+            rydia?.PlayAnimation(
+                Owner.Creature,
+                "idle");
+        }
 
         amount = ModifyTotalCardSummonGain(
             card,
             amount);
 
-        if (amount <= 0)
+        if (amount > 0)
+        {
+            GainSummon(amount);
+
+            await SummonManager.CheckSummonReady(
+                Owner.Creature,
+                choiceContext,
+                Owner.Creature,
+                null);
+        }
+
+        /*
+         * Evoke always has priority over Eidolon Resonance.
+         *
+         * If both are active, consume Evoke and leave
+         * Eidolon Resonance untouched.
+         */
+        if (isEidolon && hasEvoke)
+        {
+            await PowerCmd.Remove<EvokePower>(
+                Owner.Creature);
+
             return;
+        }
 
-        GainSummon(amount);
-
-        await SummonManager.CheckSummonReady(
-            Owner.Creature,
-            choiceContext,
-            Owner.Creature,
-            null);
+        /*
+         * If Evoke wasn't responsible for this Eidolon,
+         * consume the existing Eidolon Resonance normally.
+         *
+         * Petrifying Breath remains the exception.
+         */
+        if (isEidolon &&
+            Owner.HasPower<EidolonResonancePower>() &&
+            card is not PetrifyingBreath)
+        {
+            await PowerCmd.Remove<EidolonResonancePower>(
+                Owner.Creature);
+            SummonManager.SetSummon(Owner, 0);
+        }
     }
 
     protected virtual int CalculateTurnStartGain()

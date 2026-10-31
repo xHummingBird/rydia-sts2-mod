@@ -1,5 +1,37 @@
 {
   "RYDIA-WHIP.description": "Gain 5 [gold]Summon[/gold] at the start of your turn and 3 [gold]Summon[/gold] from Attacks",
-  "RYDIA-WHIP.flavor": "",
-  "RYDIA-WHIP.title": "Chain Whip"
+  "RYDIA-WHIP.flavor": "A well-worn whip whose links hum softly with the promise of something much larger.",
+  "RYDIA-WHIP.title": "Chain Whip",
+
+  "RYDIA-ICE_WHIP.description": "At the start of each combat, apply [blue]1[/blue] [blue]Freeze[/blue] to ALL enemies.",
+  "RYDIA-ICE_WHIP.flavor": "Cold to the touch. Colder to everything it touches.",
+  "RYDIA-ICE_WHIP.title": "Ice Whip",
+
+  "RYDIA-FLAME_WHIP.description": "At the start of each combat, apply [blue]4[/blue] [gold]Burn[/gold] to ALL enemies.",
+  "RYDIA-FLAME_WHIP.flavor": "Handle with care. Or don't. That's what the flames are for.",
+  "RYDIA-FLAME_WHIP.title": "Flame Whip",
+
+  "RYDIA-BLITZ_WHIP.description": "At the start of each combat, apply [blue]3[/blue] [gold]Shock[/gold] to ALL enemies.",
+  "RYDIA-BLITZ_WHIP.flavor": "It crackles before it cracks.",
+  "RYDIA-BLITZ_WHIP.title": "Blitz Whip",
+
+  "RYDIA-STARDUST_ROD.description": "At the start of each combat, add a random [gold]Eidolon[/gold] into your [gold]Hand[/gold]. It's free to play this turn.",
+  "RYDIA-STARDUST_ROD.flavor": "A slender rod dusted with light from a sky far beyond the Spire.",
+  "RYDIA-STARDUST_ROD.title": "Stardust Rod",
+
+  "RYDIA-MYSTIC_WHIP.description": "[gold]Eidolon[/gold] cards deal [blue]25%[/blue] more damage. Gain [blue]2[/blue] additional [gold]Summon[/gold] at the start of each turn and whenever you play an Attack.",
+  "RYDIA-MYSTIC_WHIP.flavor": "Every crack echoes somewhere beyond the veil, and something always answers.",
+  "RYDIA-MYSTIC_WHIP.title": "Mystic Whip",
+
+  "RYDIA-FAERIE_ROD.description": "Start each combat with [blue]25[/blue] [gold]Summon[/gold].",
+  "RYDIA-FAERIE_ROD.flavor": "It occasionally moves when nobody is looking.",
+  "RYDIA-FAERIE_ROD.title": "Faerie Rod",
+
+  "RYDIA-ICE_ROD.description": "Enemies with [blue]Freeze[/blue] take [blue]25%[/blue] more damage.",
+  "RYDIA-ICE_ROD.flavor": "A crystalline rod that makes an already bad case of frostbite considerably worse.",
+  "RYDIA-ICE_ROD.title": "Ice Rod",
+
+  "RYDIA-ELEMENTAL_ROD.description": "Whenever you have applied [gold]Burn[/gold], [blue]Freeze[/blue], and [gold]Shock[/gold], gain [blue]1[/blue] [gold]Strength[/gold] and [blue]1[/blue] [gold]Dexterity[/gold].",
+  "RYDIA-ELEMENTAL_ROD.flavor": "Fire, ice, lightning. Why make three trips?",
+  "RYDIA-ELEMENTAL_ROD.title": "Elemental Rod"
 }

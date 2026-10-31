@@ -73,7 +73,7 @@ public class DiamondDust() : RydiaCard(2, CardType.Attack,
                 }
             })
             .Execute(choiceContext);
-        if (Owner.HasPower<EidolonResonancePower>())
+        if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
             await PowerCmd.Apply<DiamondDustPower>(choiceContext, CombatState.HittableEnemies, DynamicVars["FreezePower"].BaseValue, Owner.Creature, this);
         await PowerCmd.Apply<FreezePower>(choiceContext, CombatState.HittableEnemies, DynamicVars["FreezePower"].BaseValue, Owner.Creature, this);
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);

@@ -7,14 +7,14 @@ using Rydia.RydiaCode.Powers;
 namespace Rydia.RydiaCode.Cards.Uncommon;
 
 public class Omnicast() : RydiaCard(
-    2,
+    1,
     CardType.Power,
     CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<OmnicastPower>(9),
+        new PowerVar<OmnicastPower>(5),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -29,6 +29,6 @@ public class Omnicast() : RydiaCard(
 
     protected override void OnUpgrade()
     {
-        DynamicVars["OmnicastPower"].UpgradeValueBy(4);
+        DynamicVars["OmnicastPower"].UpgradeValueBy(2);
     }
 }

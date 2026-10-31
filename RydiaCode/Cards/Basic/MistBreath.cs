@@ -2,10 +2,13 @@
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.Runs;
@@ -23,7 +26,17 @@ public class MistBreath() : RydiaCard(2, CardType.Attack,
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(12m, ValueProp.Move),
+        new CalculationBaseVar(12m),
+        new ExtraDamageVar(5m),
+        new CalculatedDamageVar(ValueProp.Move)
+            .WithMultiplier((CardModel card, Creature? target) =>
+            {
+                if (!card.Owner.Creature.HasPower<EidolonResonancePower>() &&
+                    !card.Owner.Creature.HasPower<EvokePower>())
+                    return 0;
+
+                return target?.Powers.Count(ShouldCountPower) ?? 0;
+            })
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -65,6 +78,16 @@ public class MistBreath() : RydiaCard(2, CardType.Attack,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(4m);
+        DynamicVars.CalculationBase.UpgradeValueBy(4m);
+        DynamicVars.ExtraDamage.UpgradeValueBy(3m);
+    }
+    
+    private static bool ShouldCountPower(PowerModel power)
+    {
+        if (power.TypeForCurrentAmount == PowerType.Debuff)
+        {
+            return !(power is ITemporaryPower);
+        }
+        return false;
     }
 }

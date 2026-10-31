@@ -60,6 +60,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="RydiaCode\Nodes\" />
         <Folder Include="Rydia\images\card_portraits\big\"/>
         <Folder Include="Rydia\images\powers\big\"/>
         <Folder Include="Rydia\images\relics\big\"/>

@@ -8,7 +8,7 @@ using Rydia.RydiaCode.Powers;
 
 namespace Rydia.RydiaCode.Cards.Rare;
 
-public class EidolonProwess() : RydiaCard(
+public class EidolonsProwess() : RydiaCard(
     2,
     CardType.Power,
     CardRarity.Rare,
@@ -21,15 +21,15 @@ public class EidolonProwess() : RydiaCard(
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<EidolonProwessPower>(25),
+        new PowerVar<EidolonsProwessPower>(25),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        await PowerCmd.Apply<EidolonProwessPower>(
+        await PowerCmd.Apply<EidolonsProwessPower>(
             choiceContext,
             Owner.Creature,
-            DynamicVars["EidolonProwessPower"].BaseValue,
+            DynamicVars["EidolonsProwessPower"].BaseValue,
             Owner.Creature,
             this);
     }

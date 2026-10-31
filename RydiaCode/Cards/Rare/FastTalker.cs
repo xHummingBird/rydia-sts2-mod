@@ -22,6 +22,7 @@ public class FastTalker() : RydiaCard(
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new PowerVar<FastTalkerPower>(1),
+        new EnergyVar(1)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
