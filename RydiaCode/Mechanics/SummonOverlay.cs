@@ -48,7 +48,7 @@ public partial class RydiaSummonDisplay : Control
      * Hover-tip position relative to the display.
      */
     private static readonly Vector2 HoverTipOffset =
-        new(-30f, -550f);
+        new(-120f, -550f);
 
     private Control? _display;
     private TextureRect? _overlay;

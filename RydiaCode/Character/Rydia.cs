@@ -19,6 +19,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx.Utilities;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 using Rydia.RydiaCode.Cards.Basic;
+using Rydia.RydiaCode.Powers;
 using Rydia.RydiaCode.Relics;
 
 namespace Rydia.RydiaCode.Character;
@@ -160,12 +161,13 @@ public class Rydia : PlaceholderCharacterModel
                 0f,
                 Array.Empty<float>());
         }
-
+        
+        var mode = creature.HasPower<EidolonResonancePower>() ? "resonance" : "rydia";
         string godotTrigger =
             trigger.ToLowerInvariant() switch
             {
                 "hit" => "hurt",
-                "idle" => "idle",
+                "idle" or "idle_loop" => $"idle_{mode}",
                 "attack" => "attack_rydia",
                 "dead" => "die",
                 "die" => "die",
@@ -188,11 +190,11 @@ public class Rydia : PlaceholderCharacterModel
         animPlayer.SpeedScale = speed;
         animPlayer.Play(godotTrigger);
 
-        if (godotTrigger != "idle" &&
-            godotTrigger != "die" &&
-            animPlayer.HasAnimation("idle"))
+        if (godotTrigger is not ("die" or "dead"))
         {
-            animPlayer.Queue("idle");
+            if (creature.HasPower<EidolonResonancePower>() || creature.HasPower<EvokePower>())
+                animPlayer.Queue("idle_resonance");
+            animPlayer.Queue("idle_rydia");
         }
 
         float effectiveLength =

@@ -17,7 +17,7 @@ public class MistBarrier() : RydiaCard(
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(7, ValueProp.Move),
+        new BlockVar(8, ValueProp.Move),
         new PowerVar<FreezePower>(1m)
     ];
 

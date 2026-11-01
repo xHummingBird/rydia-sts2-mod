@@ -11,11 +11,11 @@ public class FrozenBreath() : RydiaCard(
     1,
     CardType.Skill,
     CardRarity.Common,
-    TargetType.AllEnemies)
+    TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<FreezePower>(1m)
+        new PowerVar<FreezePower>(2m)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

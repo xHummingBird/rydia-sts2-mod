@@ -39,16 +39,16 @@
   "RYDIA-BLADE_OF_THE_REALM.description": "Deal {CalculatedDamage:diff()} damage. Deal {ExtraDamage:diff()} additional damage for each Attack already played this turn.\n{ResonanceIcon}: Double the bonus damage.",
   "RYDIA-BLADE_OF_THE_REALM.title": "Blade of the Realm",
 
-  "RYDIA-SELF_DESTRUCT.description": "Deal {Damage:diff()} damage to ALL enemies.\n{ResonanceIcon}: Trigger [gold]Burn[/gold] immediately on ALL enemies.",
+  "RYDIA-SELF_DESTRUCT.description": "Deal {Damage:diff()} damage to ALL enemies.\n{ResonanceIcon}: Trigger [red]Burn[/red] immediately on ALL enemies.",
   "RYDIA-SELF_DESTRUCT.title": "Self-Destruct",
 
   "RYDIA-CHOCOBO_KICK.description": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\n{ResonanceIcon}: ALL cards in your [gold]Hand[/gold] are free to play this turn.",
   "RYDIA-CHOCOBO_KICK.title": "Chocobo Kick",
 
-  "RYDIA-HELLFIRE.description": "Deal {Damage:diff()} damage.\nApply {BurnPower:diff()} [gold]Burn[/gold].\n{ResonanceIcon}: Deal damage to ALL enemies and double [gold]Burn[/gold] applied.",
+  "RYDIA-HELLFIRE.description": "Deal {Damage:diff()} damage.\nApply {BurnPower:diff()} [red]Burn[/red].\n{ResonanceIcon}: Deal damage to ALL enemies and double [red]Burn[/red] applied.",
   "RYDIA-HELLFIRE.title": "Hellfire",
 
-  "RYDIA-TIDAL_WAVE.description": "Deal {Damage:diff()} damage to ALL enemies. Deal 50% more damage to enemies with [gold]Burn[/gold].\n{ResonanceIcon}: Double the bonus damage.",
+  "RYDIA-TIDAL_WAVE.description": "Deal {Damage:diff()} damage to ALL enemies. Deal 50% more damage to enemies with [red]Burn[/red].\n{ResonanceIcon}: Double the bonus damage.",
   "RYDIA-TIDAL_WAVE.title": "Tidal Wave",
 
   "RYDIA-MIND_BLAST.description": "Deal {Damage:diff()} damage for each Skill in your [gold]Hand[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}\n{ResonanceIcon}: Also count non-Skill cards.",
@@ -57,10 +57,10 @@
   "RYDIA-JUDGMENT_BOLT.description": "Deal {Damage:diff()} damage to a random enemy {Repeat:diff()} times.\nApply {ShockPower:diff()} [gold]Shock[/gold] to ALL enemies.\n{ResonanceIcon}: For 2 turns, [gold]Shock[/gold] is not removed.",
   "RYDIA-JUDGMENT_BOLT.title": "Judgment Bolt",
 
-  "RYDIA-DIAMOND_DUST.description": "Deal {Damage:diff()} damage and apply {FreezePower:diff()} [blue]Freeze[/blue] to ALL enemies.\n{ResonanceIcon}: Double the effectiveness of [blue]Freeze[/blue] for {DiamondDustPower:diff()} turns.",
+  "RYDIA-DIAMOND_DUST.description": "Deal {Damage:diff()} damage and apply {FreezePower:diff()} [blue]Freeze[/blue] to ALL enemies.\n{ResonanceIcon}: Double the effectiveness of [blue]Freeze[/blue] for {FreezePower:diff()} turns.",
   "RYDIA-DIAMOND_DUST.title": "Diamond Dust",
 
-  "RYDIA-FIRA.description": "Deal {Damage:diff()} damage.\nApply {BurnPower:diff()} [gold]Burn[/gold].",
+  "RYDIA-FIRA.description": "Deal {Damage:diff()} damage.\nApply {BurnPower:diff()} [red]Burn[/red].",
   "RYDIA-FIRA.title": "Fira",
 
   "RYDIA-BLIZZARA.description": "Deal {Damage:diff()} damage.\nApply {FreezePower:diff()} [blue]Freeze[/blue].",
@@ -72,16 +72,16 @@
   "RYDIA-METEOR.description": "Deal {Damage:diff()} damage to ALL enemies X times.\nIf there is only 1 enemy, double X.",
   "RYDIA-METEOR.title": "Meteor",
 
-  "RYDIA-QUAGA.description": "Deal {Damage:diff()} damage to ALL enemies.\nDeal {DamageIncrease:diff()}% more damage to enemies with [blue]Freeze[/blue].",
+  "RYDIA-QUAGA.description": "Deal {Damage:diff()} damage to ALL enemies.\nDeal 50% more damage to enemies with [blue]Freeze[/blue].",
   "RYDIA-QUAGA.title": "Quaga",
 
-  "RYDIA-FLARE.description": "Deal {Damage:diff()} damage.\nTrigger [gold]Burn[/gold]{IfUpgraded:show: twice|} immediately.",
+  "RYDIA-FLARE.description": "Deal {Damage:diff()} damage.\nTrigger [red]Burn[/red]{IfUpgraded:show: twice|} immediately.",
   "RYDIA-FLARE.title": "Flare",
 
   "RYDIA-WATERGA.description": "Deal {Damage:diff()} damage.\nCosts 1 less {energyPrefix:energyIcons(1)} for each Skill played this turn.",
   "RYDIA-WATERGA.title": "Waterga",
 
-  "RYDIA-GOBLIN_PUNCH.description": "Deal between {MinDamage:diff()}-{MaxDamage:diff()} damage.\n{ResonanceIcon}: Always deal maximum damage.",
+  "RYDIA-GOBLIN_PUNCH.description": "Deal between {MinimumDamage:diff()}-{Damage:diff()} damage.\n{ResonanceIcon}: Always deal maximum damage.",
   "RYDIA-GOBLIN_PUNCH.title": "Goblin Punch",
 
   "RYDIA-RADIANT_BREATH.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\n{ResonanceIcon}: Deal {ExtraDamage:diff()} additional damage for each unique debuff.",
@@ -90,16 +90,16 @@
   "RYDIA-THUNDAGA.description": "Deal {Damage:diff()} damage to ALL enemies.\nApply {ShockPower:diff()} [gold]Shock[/gold] to ALL enemies.\nDoes not trigger [gold]Shock[/gold].",
   "RYDIA-THUNDAGA.title": "Thundaga",
 
-  "RYDIA-WHIPLASH.description": "Deal {CalculatedDamage:diff()} damage for each Eidolon card played this combat.",
+  "RYDIA-WHIPLASH.description": "Deal {ExtraDamage:diff()} damage for each [gold]Eidolon[/gold] card played this combat. {InCombat:\n(Deal {CalculatedDamage:diff()} damage)|}",
   "RYDIA-WHIPLASH.title": "Whiplash",
 
-  "RYDIA-MAGIC_BARRAGE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDouble [blue]Freeze[/blue] and [gold]Burn[/gold] on ALL enemies.",
+  "RYDIA-MAGIC_BARRAGE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDouble [blue]Freeze[/blue] and [red]Burn[/red] on ALL enemies.",
   "RYDIA-MAGIC_BARRAGE.title": "Magic Barrage",
 
   "RYDIA-PRIDE_OF_MIST_VILLAGE.description": "At the start of your turn, add a random [gold]Eidolon[/gold] into your [gold]Hand[/gold]. It gains [gold]Exhaust[/gold].",
   "RYDIA-PRIDE_OF_MIST_VILLAGE.title": "Pride of Mist Village",
 
-  "RYDIA-ASURAS_BOON.description": "At the start of your turn, randomly apply 3 [gold]Burn[/gold], 3 [gold]Shock[/gold], or 1 [blue]Freeze[/blue] to a random enemy.",
+  "RYDIA-ASURAS_BOON.description": "At the start of your turn, randomly apply 3 [red]Burn[/red], 3 [gold]Shock[/gold], or 1 [blue]Freeze[/blue] to a random enemy.",
   "RYDIA-ASURAS_BOON.title": "Asura's Boon",
 
   "RYDIA-BLESS.description": "Whenever you play an [gold]Eidolon[/gold], gain {BlessPower:diff()} [gold]Strength[/gold].",
@@ -108,7 +108,7 @@
   "RYDIA-RAMUHS_LIGHTNING.description": "Whenever you apply [gold]Shock[/gold], apply {RamuhsLightningPower:diff()} more [gold]Shock[/gold].",
   "RYDIA-RAMUHS_LIGHTNING.title": "Ramuh's Lightning",
 
-  "RYDIA-SUMMON_MASTERY.description": "[gold]Eidolon[/gold] cards gain [gold]Retain[/gold].\nAt the start of your turn, gain {Summon:diff()} [gold]Summon[/gold].",
+  "RYDIA-SUMMON_MASTERY.description": "[gold]Eidolon[/gold] cards gain [gold]Retain[/gold].\nAt the start of your turn, gain 5 [gold]Summon[/gold].",
   "RYDIA-SUMMON_MASTERY.title": "Summon Mastery",
 
   "RYDIA-MOTHERS_PROTECTION.description": "Whenever you play an [gold]Eidolon[/gold], gain {MothersProtectionPower:diff()} [gold]Block[/gold].",
@@ -132,10 +132,10 @@
   "RYDIA-FAST_TALKER.description": "The first time you play an [gold]Eidolon[/gold] each turn, gain {Energy:energyIcons()}.",
   "RYDIA-FAST_TALKER.title": "Fast Talker",
 
-  "RYDIA-IFRITS_FLAME.description": "Whenever you deal unblocked Attack damage, apply {IfritsFlamePower:diff()} [gold]Burn[/gold].",
+  "RYDIA-IFRITS_FLAME.description": "Whenever you deal unblocked Attack damage, apply {IfritsFlamePower:diff()} [red]Burn[/red].",
   "RYDIA-IFRITS_FLAME.title": "Ifrit's Flame",
 
-  "RYDIA-FREEZEBURN.description": "If the enemy has [blue]Freeze[/blue], apply 5 [gold]Burn[/gold].\nIf the enemy has [gold]Burn[/gold], apply 2 [blue]Freeze[/blue].",
+  "RYDIA-FREEZEBURN.description": "If the enemy has [blue]Freeze[/blue], apply 5 [red]Burn[/red].\nIf the enemy has [red]Burn[/red], apply 2 [blue]Freeze[/blue].",
   "RYDIA-FREEZEBURN.title": "Freezeburn",
 
   "RYDIA-SHOCK.description": "Apply {ShockPower:diff()} [gold]Shock[/gold].",
@@ -156,7 +156,7 @@
   "RYDIA-BLINK.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you've played an [gold]Eidolon[/gold] this turn, gain [gold]Block[/gold] another time.",
   "RYDIA-BLINK.title": "Blink",
 
-  "RYDIA-OSMOSE.description": "Gain [gold]Block[/gold] equal to the total [gold]Burn[/gold], [blue]Freeze[/blue], and [gold]Shock[/gold] on ALL enemies.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
+  "RYDIA-OSMOSE.description": "Gain [gold]Block[/gold] equal to the total [red]Burn[/red], [blue]Freeze[/blue], and [gold]Shock[/gold] on ALL enemies.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
   "RYDIA-OSMOSE.title": "Osmose",
 
   "RYDIA-SUMMONERS_MOMENTUM.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} cards.\nGain {Summon:diff()} [gold]Summon[/gold].",
@@ -168,13 +168,13 @@
   "RYDIA-CHANTLESS_INVOCATION.description": "Your next Attack and Skill are free to play.",
   "RYDIA-CHANTLESS_INVOCATION.title": "Chantless Invocation",
 
-  "RYDIA-INFERNO.description": "If the enemy has [gold]Burn[/gold], apply {BurnPower:diff()} [gold]Burn[/gold].",
+  "RYDIA-INFERNO.description": "If the enemy has [red]Burn[/red], apply {BurnPower:diff()} [red]Burn[/red].",
   "RYDIA-INFERNO.title": "Inferno",
 
-  "RYDIA-FROZEN_BREATH.description": "Apply {FreezePower:diff()} [blue]Freeze[/blue] to ALL enemies.",
+  "RYDIA-FROZEN_BREATH.description": "Apply {FreezePower:diff()} [blue]Freeze[/blue].",
   "RYDIA-FROZEN_BREATH.title": "Frozen Breath",
 
-  "RYDIA-FLAME_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nWhenever you are attacked this turn, apply {FlameShield:diff()} [gold]Burn[/gold] to the attacker.",
+  "RYDIA-FLAME_SHIELD.description": "Gain {Block:diff()} [gold]Block[/gold].\nWhenever you are attacked this turn, apply {FlameShield:diff()} [red]Burn[/red] to the attacker.",
   "RYDIA-FLAME_SHIELD.title": "Flame Shield",
 
   "RYDIA-PARRY.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Summon:diff()} [gold]Summon[/gold].",
@@ -213,7 +213,7 @@
   "RYDIA-EIDOLON_PRAYER.description": "Exhaust ALL [gold]Eidolon[/gold] cards in your [gold]Hand[/gold].\nAdd that many random {IfUpgraded:show:[gold]Upgraded[/gold] |}[gold]Eidolon[/gold] cards into your [gold]Hand[/gold].",
   "RYDIA-EIDOLON_PRAYER.title": "Eidolon Prayer",
 
-  "RYDIA-FLAME_WHIRLWIND.description": "Apply 4 [gold]Burn[/gold], 3 [gold]Shock[/gold], and 2 [blue]Freeze[/blue] to ALL enemies.",
+  "RYDIA-FLAME_WHIRLWIND.description": "Apply 4 [red]Burn[/red], 3 [gold]Shock[/gold], and 2 [blue]Freeze[/blue] to ALL enemies.",
   "RYDIA-FLAME_WHIRLWIND.title": "Flame Whirlwind",
 
   "RYDIA-INVOCATION_CONVOCATION.description": "Play a random {IfUpgraded:show:[gold]Upgraded[/gold] |}[gold]Eidolon[/gold] card and exhaust it.",

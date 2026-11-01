@@ -93,13 +93,13 @@ public class ShockPower : RydiaPower
         if (data.CardPlayToTrack == null)
             return 0m;
 
-        if (cardPlay != data.CardPlayToTrack)
+        if (cardSource != data.CardPlayToTrack.Card)
             return 0m;
 
         if (data.AmountBeforeCardPlayed <= 0)
             return 0m;
 
-        if (target.HasPower<BurnPower>())
+        if (Owner.HasPower<BurnPower>())
             return data.AmountBeforeCardPlayed * 2;
         
         return data.AmountBeforeCardPlayed;

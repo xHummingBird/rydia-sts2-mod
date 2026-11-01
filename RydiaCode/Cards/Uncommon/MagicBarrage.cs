@@ -73,6 +73,7 @@ public class MagicBarrage() : RydiaCard(3, CardType.Attack,
             if (freezePower > 0)
                 await PowerCmd.Apply<FreezePower>(choiceContext, enemy, freezePower, Owner.Creature, this);
         }
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

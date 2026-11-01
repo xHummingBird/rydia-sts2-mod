@@ -20,6 +20,16 @@ namespace Rydia.RydiaCode.Cards.Uncommon;
 public class Hellfire() : RydiaCard(2, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy), IEidolonCard
 {
+    public override TargetType TargetType
+    {
+        get
+        {
+            if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
+                return TargetType.AllEnemies;
+            return TargetType.AnyEnemy;
+        }
+    }
+    
     protected override bool ShouldGlowGoldInternal => Owner.HasPower<EidolonResonancePower>();
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
@@ -84,7 +94,7 @@ public class Hellfire() : RydiaCard(2, CardType.Attack,
             {
                 await Task.Delay(33);
                 await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingAllOpponents(base.CombatState)
-                    .WithHitFx("res://Rydia/sfx/from_tifa/meteostrike_1.wav")
+                    .WithHitFx(null, "res://Rydia/sfx/from_tifa/meteostrike_1.wav")
                     .Execute(choiceContext);
                 await Task.Delay(167);
             }

@@ -26,7 +26,7 @@ public class MistBreath() : RydiaCard(2, CardType.Attack,
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new CalculationBaseVar(12m),
+        new CalculationBaseVar(14m),
         new ExtraDamageVar(5m),
         new CalculatedDamageVar(ValueProp.Move)
             .WithMultiplier((CardModel card, Creature? target) =>

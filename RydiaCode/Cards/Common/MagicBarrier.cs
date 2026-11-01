@@ -18,7 +18,7 @@ public class MagicBarrier() : RydiaCard(
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(5, ValueProp.Move)
+        new BlockVar(7, ValueProp.Move)
     ];
 
     protected override async Task OnPlay(

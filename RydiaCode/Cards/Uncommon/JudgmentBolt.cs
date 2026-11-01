@@ -23,8 +23,8 @@ public class JudgmentBolt() : RydiaCard(2, CardType.Attack,
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new DamageVar(4m, ValueProp.Move),
-        new PowerVar<ShockPower>(3),
-        new RepeatVar(1)
+        new PowerVar<ShockPower>(4),
+        new RepeatVar(4)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

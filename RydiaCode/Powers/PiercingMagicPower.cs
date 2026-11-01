@@ -26,39 +26,33 @@ public class PiercingMagicPower : RydiaPower
         CardPlay? cardPlay)
     {
         if (!props.IsPoweredAttack())
-            return 1m;
-
-        if (cardSource == null)
-            return 1m;
-
-        if (cardSource.Owner.Creature != Owner)
-            return 1m;
-
-        CardPile? pile = cardSource.Pile;
-
-        if (pile != null &&
-            pile.Type == PileType.Play &&
-            cardSource.CurrentPlayIndex > 0)
         {
             return 1m;
         }
-
-        int attacksPlayed = CombatManager.Instance.History.CardPlaysStarted.Count(
-            entry =>
-                entry.HappenedThisTurn(CombatState) &&
-                entry.CardPlay.Card.Type == CardType.Attack &&
-                entry.CardPlay.Player == Owner.Player);
-
-        pile = cardSource.Pile;
-
-        int currentAttack =
-            pile != null && pile.Type == PileType.Play
-                ? 1
-                : 0;
-
-        if (attacksPlayed > currentAttack)
+        if (cardSource == null)
+        {
             return 1m;
-
-        return 1m + Amount / 100m;
+        }
+        if (cardSource.Owner.Creature != base.Owner)
+        {
+            return 1m;
+        }
+        CardPile pile;
+        if (cardSource != null)
+        {
+            pile = cardSource.Pile;
+            if (pile != null && pile.Type == PileType.Play && cardSource.CurrentPlayIndex > 0)
+            {
+                return 1m;
+            }
+        }
+        int num = CombatManager.Instance.History.CardPlaysStarted.Count((CardPlayStartedEntry e) => e.HappenedThisTurn(base.CombatState) && e.CardPlay.Card.Type == CardType.Attack && e.CardPlay.Player == base.Owner.Player);
+        pile = cardSource.Pile;
+        int num2 = ((pile != null && pile.Type == PileType.Play) ? 1 : 0);
+        if (num > num2)
+        {
+            return 1m;
+        }
+        return 1m + (decimal)base.Amount / 100m;
     }
 }

@@ -46,6 +46,7 @@ protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay
         .WithHitFx(null, "event:/sfx/characters/defect/defect_lightning_passive")
         .Execute(choiceContext);
     await PowerCmd.Apply<ShockPower>(choiceContext, CombatState.HittableEnemies, DynamicVars["ShockPower"].BaseValue, Owner.Creature, this);
+    CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
 }
 
 protected override void OnUpgrade()

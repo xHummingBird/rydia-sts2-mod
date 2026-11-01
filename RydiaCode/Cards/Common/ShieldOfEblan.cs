@@ -15,7 +15,7 @@ public class ShieldOfEblan() : RydiaCard(
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(8, ValueProp.Move),
+        new BlockVar(9, ValueProp.Move),
         new CardsVar(1)
     ];
 

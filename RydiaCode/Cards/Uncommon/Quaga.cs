@@ -16,7 +16,7 @@ using Rydia.RydiaCode.Powers;
 namespace Rydia.RydiaCode.Cards.Uncommon;
 
 public class Quaga() : RydiaCard(2, CardType.Attack,
-    CardRarity.Uncommon, TargetType.AnyEnemy), IMagicCard
+    CardRarity.Uncommon, TargetType.AllEnemies), IMagicCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
@@ -38,7 +38,7 @@ public class Quaga() : RydiaCard(2, CardType.Attack,
             SfxCmd.Play("res://Rydia/sfx/magic_cast.mp3", 1.1f);
             rydia.PlayAnimation(ownerCreature, "cast");
             await Task.Delay(300);
-            rydia.PlayVfxOnTarget(
+            rydia.PlayVfxBehindTarget(
                 CombatState.HittableEnemies.First(), 
                 "res://Rydia/scenes/vfx.tscn", 
                 "quaga");
@@ -48,6 +48,7 @@ public class Quaga() : RydiaCard(2, CardType.Attack,
         await CommonActions.CardAttack(this, play.Target)
             .Execute(choiceContext);
         await Task.Delay(250);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

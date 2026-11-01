@@ -45,6 +45,7 @@ public class Fira() : RydiaCard(1, CardType.Attack,
             .WithHitFx(null, "event:/sfx/characters/attack_fire")
             .Execute(choiceContext);
         await PowerCmd.Apply<BurnPower>(choiceContext, play.Target, DynamicVars["BurnPower"].BaseValue, Owner.Creature, this);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

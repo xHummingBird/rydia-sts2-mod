@@ -37,7 +37,7 @@ public class TidalWave() : RydiaCard(2, CardType.Attack,
         if (ownerCreature != null && Owner?.Character is Character.Rydia rydia)
         {
             AudioHelper.PlayRandomSummon();
-            rydia.PlayAnimation(ownerCreature, "leaviathan");
+            rydia.PlayAnimation(ownerCreature, "leviathan");
             SfxCmd.Play("res://Rydia/sfx/summon_cast.mp3", 1.1f);
             SfxCmd.Play("res://Rydia/sfx/water_2.wav");
             await Task.Delay(700);

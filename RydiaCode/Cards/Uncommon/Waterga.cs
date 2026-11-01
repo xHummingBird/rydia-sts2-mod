@@ -46,6 +46,7 @@ public class Waterga() : RydiaCard(3, CardType.Attack,
         await CommonActions.CardAttack(this, play.Target)
             .WithHitFx(null)
             .Execute(choiceContext);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
     
     protected override void OnUpgrade()

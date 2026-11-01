@@ -65,10 +65,10 @@ public class DiamondDust() : RydiaCard(2, CardType.Attack,
                 var targets = base.CombatState.HittableEnemies;
                 foreach (var target in targets)
                 {
-                    var vfx = NGroundFireVfx.Create(target, VfxColor.Cyan);
+                    var vfx = NGroundFireVfx.Create(target, VfxColor.Blue);
                     if (vfx != null)
                     {
-                        NCombatRoom.Instance.CombatVfxContainer.AddChildSafely(vfx);
+                        NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(vfx);
                     }
                 }
             })

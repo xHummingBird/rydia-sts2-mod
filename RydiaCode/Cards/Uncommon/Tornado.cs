@@ -47,6 +47,7 @@ public class Tornado() : RydiaCard(2, CardType.Attack,
         }
         else  await CommonActions.CardAttack(this, play.Target, DynamicVars.Repeat.IntValue)
             .Execute(choiceContext);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
         
     }
 

@@ -4,6 +4,8 @@ namespace Rydia.RydiaCode.Extensions;
 
 public static class AudioHelper
 {
+    public static float voiceVolume = 0.9f;
+    
     private static readonly Random rng = new Random();
     
     private static readonly string[] AttackSfx =
@@ -110,6 +112,6 @@ public static class AudioHelper
     public static void PlayRandom(string[] pool)
     {
         int index = rng.Next(pool.Length);
-        SfxCmd.Play(pool[index]);
+        SfxCmd.Play(pool[index], voiceVolume);
     }
 }

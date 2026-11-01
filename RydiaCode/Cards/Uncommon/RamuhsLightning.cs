@@ -20,7 +20,7 @@ public class RamuhsLightning() : RydiaCard(
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new PowerVar<RamuhsLightningPower>(1),
+        new PowerVar<RamuhsLightningPower>(2),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -35,6 +35,6 @@ public class RamuhsLightning() : RydiaCard(
 
     protected override void OnUpgrade()
     {
-        DynamicVars["RamuhsLightningPower"].UpgradeValueBy(1);
+        EnergyCost.UpgradeBy(-1);
     }
 }

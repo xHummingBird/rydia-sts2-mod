@@ -1,5 +1,5 @@
 {
-  "RYDIA-WHIP.description": "Gain 5 [gold]Summon[/gold] at the start of your turn and 3 [gold]Summon[/gold] from Attacks",
+  "RYDIA-WHIP.description": "Gain 5 [gold]Summon[/gold] at the start of your turn and  from Attacks",
   "RYDIA-WHIP.flavor": "A well-worn whip whose links hum softly with the promise of something much larger.",
   "RYDIA-WHIP.title": "Chain Whip",
 
@@ -19,7 +19,7 @@
   "RYDIA-STARDUST_ROD.flavor": "A slender rod dusted with light from a sky far beyond the Spire.",
   "RYDIA-STARDUST_ROD.title": "Stardust Rod",
 
-  "RYDIA-MYSTIC_WHIP.description": "[gold]Eidolon[/gold] cards deal [blue]25%[/blue] more damage. Gain [blue]2[/blue] additional [gold]Summon[/gold] at the start of each turn and whenever you play an Attack.",
+  "RYDIA-MYSTIC_WHIP.description": "[gold]Eidolon[/gold] cards deal [blue]25%[/blue] more damage. Gain 7 [gold]Summon[/gold] at the start of each turn and from Attacks.",
   "RYDIA-MYSTIC_WHIP.flavor": "Every crack echoes somewhere beyond the veil, and something always answers.",
   "RYDIA-MYSTIC_WHIP.title": "Mystic Whip",
 

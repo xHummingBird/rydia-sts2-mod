@@ -68,6 +68,7 @@ public class BurstStorm() : RydiaCard(2, CardType.Attack,
         await CommonActions.CardAttack(this, play.Target)
             .WithHitFx(null, "res://Rydia/sfx/tornado_hit.wav")
             .Execute(choiceContext);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
         
     }
 

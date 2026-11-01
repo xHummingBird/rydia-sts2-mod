@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpswcx77alnk4"
-path="res://.godot/imported/ramuhs_lightning.png-3bffe3b587efc447e184b285c90a3edc.ctex"
+uid="uid://cw4qryqhxog5p"
+path="res://.godot/imported/blank.png-84328213148df5e8d3a585c648e55d72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rydia/images/powers/big/ramuhs_lightning.png"
-dest_files=["res://.godot/imported/ramuhs_lightning.png-3bffe3b587efc447e184b285c90a3edc.ctex"]
+source_file="res://Rydia/images/charui/blank.png"
+dest_files=["res://.godot/imported/blank.png-84328213148df5e8d3a585c648e55d72.ctex"]
 
 [params]
 

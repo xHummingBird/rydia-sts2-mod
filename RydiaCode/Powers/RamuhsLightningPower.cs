@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace Rydia.RydiaCode.Powers;
 
@@ -22,29 +23,22 @@ public class RamuhsLightningPower : RydiaPower
         HoverTipFactory.FromPower<ShockPower>()
     ];
 
-    public override async Task AfterPowerAmountChanged(
-        PlayerChoiceContext choiceContext,
-        PowerModel power,
-        decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
+    public override decimal ModifyPowerAmountGivenAdditive(PowerModel power, Creature giver, decimal amount, Creature? target, CardModel? cardSource)
     {
-        if (amount <= 0m)
-            return;
+        if (!(power is ShockPower))
+        {
+            return 0m;
+        }
+        if (giver != base.Owner)
+        {
+            return 0m;
+        }
+        return Amount;
+    }
 
-        if (applier != Owner)
-            return;
-
-        if (power is not ShockPower)
-            return;
-
+    public override Task AfterModifyingPowerAmountGiven(PowerModel power)
+    {
         Flash();
-
-        await PowerCmd.Apply<ShockPower>(
-            choiceContext,
-            power.Owner,
-            Amount,
-            Owner,
-            null);
+        return Task.CompletedTask;
     }
 }

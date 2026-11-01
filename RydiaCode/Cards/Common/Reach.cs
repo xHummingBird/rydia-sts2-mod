@@ -3,12 +3,12 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace Rydia.RydiaCode.Cards.Uncommon;
+namespace Rydia.RydiaCode.Cards.Common;
 
 public class Reach() : RydiaCard(
     1,
     CardType.Skill,
-    CardRarity.Uncommon,
+    CardRarity.Common,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>

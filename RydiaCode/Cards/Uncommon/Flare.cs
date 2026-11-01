@@ -15,12 +15,12 @@ using Rydia.RydiaCode.Powers;
 
 namespace Rydia.RydiaCode.Cards.Uncommon;
 
-public class Flare() : RydiaCard(2, CardType.Attack,
+public class Flare() : RydiaCard(1, CardType.Attack,
     CardRarity.Uncommon, TargetType.AnyEnemy), IMagicCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new DamageVar(13m, ValueProp.Move),
+        new DamageVar(11m, ValueProp.Move),
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -56,6 +56,7 @@ public class Flare() : RydiaCard(2, CardType.Attack,
             if (IsUpgraded)
                 await power.Trigger();
         }
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

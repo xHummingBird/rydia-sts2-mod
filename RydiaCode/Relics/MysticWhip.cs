@@ -16,7 +16,7 @@ public class MysticWhip : SummonRelicBase
         7;
 
     protected override int SummonPerAttack =>
-        5;
+        7;
 
     public override decimal ModifyDamageMultiplicative(
         Creature? target,

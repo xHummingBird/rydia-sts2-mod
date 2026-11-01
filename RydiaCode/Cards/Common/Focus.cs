@@ -13,7 +13,7 @@ public class Focus() : RydiaCard(2, CardType.Skill,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => 
     [
-        new BlockVar(11, ValueProp.Move),
+        new BlockVar(13, ValueProp.Move),
         new EnergyVar(2)
     ];
 

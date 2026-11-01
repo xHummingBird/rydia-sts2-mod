@@ -58,7 +58,7 @@ public class Zantetsuken() : RydiaCard(2, CardType.Attack,
             SfxCmd.Play("res://Rydia/sfx/sword_swing_heavy.wav");
             
         }
-        else await CommonActions.CardAttack(this, play.Target)
+        await CommonActions.CardAttack(this, play.Target)
             .WithHitFx(null, "res://Rydia/sfx/zantetsuken_1.wav")
             .Execute(choiceContext);
         await Task.Delay(1000);

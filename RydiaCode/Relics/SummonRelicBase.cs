@@ -28,9 +28,9 @@ public abstract class SummonRelicBase : RydiaRelic
 
     protected virtual int SummonPerTurn => 5;
 
-    protected virtual int SummonPerAttack => 3;
+    protected virtual int SummonPerAttack => 5;
 
-    protected virtual int SummonPerEidolonCard => 6;
+    protected virtual int SummonPerEidolonCard => 8;
 
     public override bool ShowCounter => false;
 
@@ -121,6 +121,9 @@ public abstract class SummonRelicBase : RydiaRelic
 
         bool isEidolon = card is IEidolonCard;
         bool hasEvoke = isEidolon && Owner.HasPower<EvokePower>();
+        bool hadEidolonResonance =
+            isEidolon &&
+            Owner.HasPower<EidolonResonancePower>();
 
         /*
          * Eidolon cards take priority over normal Attack cards.
@@ -196,12 +199,15 @@ public abstract class SummonRelicBase : RydiaRelic
          * Petrifying Breath remains the exception.
          */
         if (isEidolon &&
-            Owner.HasPower<EidolonResonancePower>() &&
+            hadEidolonResonance &&
             card is not PetrifyingBreath)
         {
             await PowerCmd.Remove<EidolonResonancePower>(
                 Owner.Creature);
             SummonManager.SetSummon(Owner, 0);
+            rydia?.PlayAnimation(
+                Owner.Creature,
+                "idle");
         }
     }
 

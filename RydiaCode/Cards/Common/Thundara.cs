@@ -46,6 +46,7 @@ public class Thundara() : RydiaCard(1, CardType.Attack,
             .WithHitFx(null, "event:/sfx/characters/defect/defect_lightning_passive")
             .Execute(choiceContext);
         await PowerCmd.Apply<ShockPower>(choiceContext, play.Target, DynamicVars["ShockPower"].BaseValue, Owner.Creature, this);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

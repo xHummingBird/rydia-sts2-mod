@@ -1,6 +1,4 @@
 ﻿using Godot;
-using MegaCrit.Sts2.Core.Context;
-using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
@@ -37,42 +35,17 @@ public static class CenterCardCinematic
 
     private static void SetHidden(bool hidden)
     {
-        var combatRoom = NCombatRoom.Instance;
-        var playContainer = combatRoom?.Ui?.PlayContainer;
-
-        if (combatRoom == null || playContainer == null)
+        var playContainer = NCombatRoom.Instance?.Ui?.PlayContainer;
+        if (playContainer == null)
             return;
 
-        var localPlayerNode = combatRoom.CreatureNodes.FirstOrDefault(
-            creature => creature.Entity.IsPlayer &&
-                        LocalContext.IsMe(creature.Entity)
-        );
-
-        var stateDisplay = localPlayerNode?
-            .GetNodeOrNull<NCreatureStateDisplay>("%HealthBar");
-
-        var targetColor = hidden
-            ? Colors.Transparent
-            : Colors.White;
-
-        var tween = playContainer.CreateTween()
-            .SetParallel();
-
+        // ✅ Smooth fade (optional but nice)
+        var tween = playContainer.CreateTween();
         tween.TweenProperty(
             playContainer,
             "modulate",
-            targetColor,
+            hidden ? Colors.Transparent : Colors.White,
             0.1f
         );
-
-        if (stateDisplay != null)
-        {
-            tween.TweenProperty(
-                stateDisplay,
-                "modulate",
-                targetColor,
-                0.1f
-            );
-        }
     }
 }

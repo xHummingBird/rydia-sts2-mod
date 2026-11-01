@@ -44,7 +44,8 @@ public class Blizzara() : RydiaCard(1, CardType.Attack,
         await CommonActions.CardAttack(this, play.Target)
             .WithHitFx(null, "res://Rydia/sfx/ice.wav")
             .Execute(choiceContext);
-        await PowerCmd.Apply<ShockPower>(choiceContext, play.Target, DynamicVars["FreezePower"].BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<FreezePower>(choiceContext, play.Target, DynamicVars["FreezePower"].BaseValue, Owner.Creature, this);
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()
