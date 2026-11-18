@@ -29,7 +29,7 @@ public class MindBlast() : RydiaCard(
         new DamageVar(5m, ValueProp.Move),
         new CalculationBaseVar(0m),
         new CalculationExtraVar(1m),
-        new CalculatedVar(CalculatedHits).WithMultiplier(
+        new CalculatedHitCountVar(CalculatedHits).WithMultiplier(
             (CardModel card, Creature? _) =>
             {
                 var cardsInHand =
@@ -55,7 +55,7 @@ public class MindBlast() : RydiaCard(
         ArgumentNullException.ThrowIfNull(play.Target);
 
         int hitCount =
-            (int)((CalculatedVar)DynamicVars[CalculatedHits])
+            (int)((CalculatedHitCountVar)DynamicVars[CalculatedHits])
                 .Calculate(play.Target);
         var ownerCreature = Owner?.Creature;
         CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);

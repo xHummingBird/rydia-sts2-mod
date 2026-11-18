@@ -34,40 +34,56 @@ public class Megaflare() : RydiaCard(1, CardType.Attack,
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
     {
-        var ownerCreature = Owner?.Creature;
-        var enemies = CombatState.HittableEnemies.ToList();
-        var leftMostEnemy = enemies.First();
-        
-        if (ownerCreature != null && Owner?.Character is Character.Rydia rydia && (Owner.HasPower<MegaflarePower>() || Owner.HasPower<EvokePower>()))
+        var ownerCreature = Owner.Creature;
+
+        if (!Owner.HasPower<EidolonResonancePower>() &&
+            !Owner.HasPower<EvokePower>())
         {
-            CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);
-            AudioHelper.PlayRandomSummon();
-            rydia.PlayAnimation(Owner.Creature, "summon_cast");
-            SfxCmd.Play("res://Rydia/sfx/summon_cast.mp3", 1.1f);
-            rydia.PlayVfxOnTarget(leftMostEnemy, "res://Rydia/scenes/vfx.tscn", "bahamut");
-            SfxCmd.Play("res://Rydia/sfx/from_tifa/final_heaven_1.wav");
-            await Task.Delay(733);
-            SfxCmd.Play("res://Rydia/sfx/from_tifa/meteostrike_3.wav");
-            await CommonActions.CardAttack(this, play.Target)
-                .WithHitFx(null)
-                .BeforeDamage(async delegate
-                {
-                    var targets = base.CombatState.HittableEnemies;
-                    foreach (var target in targets)
-                    {
-                        var vfx = NGroundFireVfx.Create(target, VfxColor.Red);
-                        if (vfx != null)
-                        {
-                            NCombatRoom.Instance.CombatVfxContainer.AddChildSafely(vfx);
-                        }
-                    }
-                })
-                .Execute(choiceContext);
-            await Task.Delay(1000);
-            CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
+            await PowerCmd.Apply<MegaflarePower>(
+                choiceContext,
+                ownerCreature,
+                DynamicVars["MegaflarePower"].BaseValue,
+                ownerCreature,
+                this
+            );
+            return;
         }
-        else 
-            await PowerCmd.Apply<MegaflarePower>(choiceContext, Owner.Creature, DynamicVars["MegaflarePower"].BaseValue, Owner.Creature, this);
+
+        if (Owner.Character is not Character.Rydia rydia)
+            return;
+
+        var leftMostEnemy = CombatState.HittableEnemies.First();
+
+        CenterCardCinematic.Start(RunManager.Instance.NetService.NetId);
+
+        AudioHelper.PlayRandomSummon();
+        rydia.PlayAnimation(ownerCreature, "summon_cast");
+
+        SfxCmd.Play("res://Rydia/sfx/summon_cast.mp3", 1.1f);
+        rydia.PlayVfxOnTarget(leftMostEnemy, "res://Rydia/scenes/vfx.tscn", "bahamut");
+        SfxCmd.Play("res://Rydia/sfx/from_tifa/final_heaven_1.wav");
+
+        await Task.Delay(733);
+
+        SfxCmd.Play("res://Rydia/sfx/from_tifa/meteostrike_3.wav");
+
+        await CommonActions.CardAttack(this, play.Target)
+            .WithHitFx(null)
+            .BeforeDamage(async delegate
+            {
+                foreach (var target in CombatState.HittableEnemies)
+                {
+                    var vfx = NGroundFireVfx.Create(target, VfxColor.Red);
+
+                    if (vfx != null)
+                        NCombatRoom.Instance.CombatVfxContainer.AddChildSafely(vfx);
+                }
+            })
+            .Execute(choiceContext);
+
+        await Task.Delay(1000);
+
+        CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
     }
 
     protected override void OnUpgrade()

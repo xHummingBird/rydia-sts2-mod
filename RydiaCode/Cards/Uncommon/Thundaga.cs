@@ -13,7 +13,7 @@ using Rydia.RydiaCode.Powers;
 namespace Rydia.RydiaCode.Cards.Uncommon;
 
 public class Thundaga() : RydiaCard(2, CardType.Attack,
-    CardRarity.Uncommon, TargetType.AnyEnemy), IMagicCard
+    CardRarity.Uncommon, TargetType.AllEnemies), IMagicCard
 {
 protected override IEnumerable<DynamicVar> CanonicalVars =>
 [

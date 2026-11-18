@@ -17,7 +17,7 @@
   "RYDIA-BURST_STORM.description": "Deal {Damage:diff()} damage. \nCosts 0 {energyPrefix:energyIcons(1)} if you played an [gold]Eidolon[/gold] card this turn.",
   "RYDIA-BURST_STORM.title": "Burst Storm",
 
-  "RYDIA-TORNADO.description": "Deal {Damage:diff()} damage {Repeat:diff()} times to ALL enemies.",
+  "RYDIA-TORNADO.description": "Deal {Damage:diff()} damage {HitCount:diff()} times to ALL enemies.",
   "RYDIA-TORNADO.title": "Tornado",
 
   "RYDIA-WHIP_DANCE.description": "Deal {Damage:diff()} damage 2 times. \nPlay a random {IfUpgraded:show:[gold]Upgraded[/gold]|} Attack from your [gold]Draw Pile[/gold].",
@@ -54,7 +54,7 @@
   "RYDIA-MIND_BLAST.description": "Deal {Damage:diff()} damage for each Skill in your [gold]Hand[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}\n{ResonanceIcon}: Also count non-Skill cards.",
   "RYDIA-MIND_BLAST.title": "Mind Blast",
 
-  "RYDIA-JUDGMENT_BOLT.description": "Deal {Damage:diff()} damage to a random enemy {Repeat:diff()} times.\nApply {ShockPower:diff()} [gold]Shock[/gold] to ALL enemies.\n{ResonanceIcon}: For 2 turns, [gold]Shock[/gold] is not removed.",
+  "RYDIA-JUDGMENT_BOLT.description": "Deal {Damage:diff()} damage to a random enemy {HitCount:diff()} times.\nApply {ShockPower:diff()} [gold]Shock[/gold] to ALL enemies.\n{ResonanceIcon}: For 2 turns, [gold]Shock[/gold] is not removed.",
   "RYDIA-JUDGMENT_BOLT.title": "Judgment Bolt",
 
   "RYDIA-DIAMOND_DUST.description": "Deal {Damage:diff()} damage and apply {FreezePower:diff()} [blue]Freeze[/blue] to ALL enemies.\n{ResonanceIcon}: Double the effectiveness of [blue]Freeze[/blue] for {FreezePower:diff()} turns.",

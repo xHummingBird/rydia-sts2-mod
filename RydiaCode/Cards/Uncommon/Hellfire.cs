@@ -90,7 +90,7 @@ public class Hellfire() : RydiaCard(2, CardType.Attack,
             RydiaExtensions.CombatHelpers.RydiaFakeHit(Owner.Creature, middleEnemy,
                 "res://Rydia/sfx/from_killia/fire_punch.wav", playHitVfx: false);
             await Task.Delay(167);
-            if (Owner.HasPower<EidolonResonancePower>())
+            if (Owner.HasPower<EidolonResonancePower>() || Owner.HasPower<EvokePower>())
             {
                 await Task.Delay(33);
                 await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).TargetingAllOpponents(base.CombatState)

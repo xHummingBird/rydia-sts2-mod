@@ -24,7 +24,7 @@ public class JudgmentBolt() : RydiaCard(2, CardType.Attack,
     [
         new DamageVar(4m, ValueProp.Move),
         new PowerVar<ShockPower>(4),
-        new RepeatVar(4)
+        new HitCountVar(4)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -47,7 +47,7 @@ public class JudgmentBolt() : RydiaCard(2, CardType.Attack,
             SfxCmd.Play("res://Rydia/sfx/from_killia/charge_thunder (3).wav");
             await Task.Delay(700);
         }
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(DynamicVars.Repeat.IntValue)
+        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(DynamicVars.HitCount.IntValue)
             .FromCard(this, play)
             .TargetingRandomOpponents(base.CombatState)
             .WithHitVfxNode(target =>
@@ -74,7 +74,7 @@ public class JudgmentBolt() : RydiaCard(2, CardType.Attack,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Repeat.UpgradeValueBy(1);
+        DynamicVars.HitCount.UpgradeValueBy(1);
         DynamicVars["ShockPower"].UpgradeValueBy(1);
     }
 }

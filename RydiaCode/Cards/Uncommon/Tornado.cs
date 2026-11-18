@@ -16,7 +16,7 @@ public class Tornado() : RydiaCard(2, CardType.Attack,
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new DamageVar(3m, ValueProp.Move),
-        new RepeatVar(5)
+        new HitCountVar(5)
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay play)
@@ -32,7 +32,7 @@ public class Tornado() : RydiaCard(2, CardType.Attack,
             SfxCmd.Play("res://Rydia/sfx/wind.wav", 1.2f);
             foreach (var enemy in CombatState.HittableEnemies)
                 rydia.PlayVfxOnTarget(enemy, "res://Rydia/scenes/vfx.tscn", "tornado");
-            await CommonActions.CardAttack(this, play.Target, DynamicVars.Repeat.IntValue)
+            await CommonActions.CardAttack(this, play.Target, DynamicVars.HitCount.IntValue)
                 .WithHitFx(null, "res://Rydia/sfx/tornado_hit.wav")
                 .WithHitVfxNode(target =>
                 {
@@ -45,7 +45,7 @@ public class Tornado() : RydiaCard(2, CardType.Attack,
                 })
                 .Execute(choiceContext);
         }
-        else  await CommonActions.CardAttack(this, play.Target, DynamicVars.Repeat.IntValue)
+        else  await CommonActions.CardAttack(this, play.Target, DynamicVars.HitCount.IntValue)
             .Execute(choiceContext);
         CenterCardCinematic.End(RunManager.Instance.NetService.NetId);
         
@@ -53,6 +53,6 @@ public class Tornado() : RydiaCard(2, CardType.Attack,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Repeat.UpgradeValueBy(1m);
+        DynamicVars.HitCount.UpgradeValueBy(1m);
     }
 }

@@ -147,7 +147,16 @@ public abstract class SummonRelicBase : RydiaRelic
                 Owner.Creature,
                 "idle");
         }
-        else if (card.Type == CardType.Attack)
+        // else if (card.Type == CardType.Attack)
+        // {
+        //     amount = CalculateAttackGain(card);
+        //
+        //     amount = ModifyAttackSummonGain(
+        //         card,
+        //         amount);
+        // }
+        
+        else 
         {
             amount = CalculateAttackGain(card);
 
