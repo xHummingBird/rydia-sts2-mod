@@ -12,6 +12,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 using Rydia.RydiaCode.Extensions;
+using Rydia.RydiaCode.Mechanics;
 using Rydia.RydiaCode.Powers;
 
 namespace Rydia.RydiaCode.Cards.Uncommon;
@@ -20,7 +21,7 @@ public class MindBlast() : RydiaCard(
     1,
     CardType.Attack,
     CardRarity.Uncommon,
-    TargetType.AnyEnemy)
+    TargetType.AnyEnemy), IEidolonCard
 {
     private const string CalculatedHits = "CalculatedHits";
 

@@ -46,4 +46,9 @@ public class Blink() : RydiaCard(
             await CommonActions.CardBlock(this, play);
         }
     }
+    
+    protected override void OnUpgrade()
+    {
+        DynamicVars.Block.UpgradeValueBy(4m);
+    }
 }
